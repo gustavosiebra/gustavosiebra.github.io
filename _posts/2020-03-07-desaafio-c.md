@@ -48,13 +48,16 @@ int main(){
 
     system("cls"); 
 
+    printf("cod.|sal.|temp ser\n\n");
     for(linha = 0 ; linha < numFunc ; linha++){
         for(coluna = 0 ; coluna < 3 ; coluna++)
             printf("%.2f ", matriz[linha][coluna]);
             printf("\n"); //apзs cada linha ser impressa, um salto de linha
     }
-
+    system("Pause");
+    system("cls");
     // Item A
+    printf("Item A\n");
     printf("\n\nConsultar Salario (R$): ");
     scanf("%f", &consultaSalario);
     printf("\n");
@@ -66,7 +69,6 @@ int main(){
     minSalario[1] = (0);
     maxSalario[1] = (0);
 
-    printf("Item A\n");
     printf("Relatorio 1\n\n");
     printf("Salarios abaixo de R$ %.2f \n\n", consultaSalario);
 
@@ -83,12 +85,13 @@ int main(){
             break;//forуa a saьda imediata do loop
         }
     }
-
+    system("Pause");
+    system("cls");
     //Relatorio 2
     printf("\nRelatorio 2\n");
     printf("\nSalarios acima de R$ %.2f \n", consultaSalario);
     for(linha = 0 ; linha < numFunc ; linha++){
-        if(matriz[linha][1] >=  consultaSalario ){
+        if(matriz[linha][1] >  consultaSalario ){
             maxSalario[0] = matriz[linha][0];
             maxSalario[1] = matriz[linha][1];
             printf("\n%.1f %.2f", maxSalario[0], maxSalario[1]);
@@ -141,6 +144,7 @@ int main(){
     system("cls");
 
     //Item C
+    printf("\nItem C\n\n");
     float tempServico;
     float tempoServico[3];
     tempoServico[2] = (0);
