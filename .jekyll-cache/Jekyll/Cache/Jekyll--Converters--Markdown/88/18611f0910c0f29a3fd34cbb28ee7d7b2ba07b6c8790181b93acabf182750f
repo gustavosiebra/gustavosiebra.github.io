@@ -1,4 +1,6 @@
-I"{c<p>Um tempo atrás um amigo recém ingresso no curso de Ciências da Computação perguntou se eu sabia programar, o professor dele tinha passado um desafio valendo nota, lembrei do meu início, tive muitas dificuldades e por sorte convivi com pessoas fantásticas que sempre puderam me orientar, meu primeiro trabalho na faculdade era entrar com número de 1-1000 e exibir na tela por extenso, dificílimo na época. Bom, passando a nostalgia vamos ao desafio do colega e a minha resolução.</p>
+I"~c<p>Um tempo atrás um amigo recém ingresso no curso de Ciências da Computação perguntou se eu sabia programar, o professor dele tinha passado um desafio valendo nota, lembrei do meu início, tive muitas dificuldades e por sorte convivi com pessoas fantásticas que sempre puderam me orientar, meu primeiro trabalho na faculdade era entrar com número de 1-1000 e exibir na tela por extenso, dificílimo na época. Bom, passando a nostalgia vamos ao desafio do colega e a minha resolução.</p>
+
+<hr />
 
 <p>Faça um programa que carregue três vetores nos quais serão armazenados os códigos, os salários e o tempo de serviço, em anos, de cinco funcionários. Posteriormente, o programa deverá:</p>
 
@@ -28,15 +30,10 @@
 	        <span class="n">printf</span><span class="p">(</span><span class="s">"Informe o codigo do funcionario: "</span><span class="p">);</span>
 	        <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
 	        <span class="n">printf</span><span class="p">(</span><span class="s">"Informe o salario do funcionario (R$): "</span><span class="p">);</span>
-
 	        <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
-
 	        <span class="n">printf</span><span class="p">(</span><span class="s">"Tempo de serviуo do Funcionario: "</span><span class="p">);</span>
-
 	        <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">2</span><span class="p">]);</span>
-
 	        <span class="c1">//system("cls");</span>
-
 	        <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
 	    <span class="p">}</span>
 
