@@ -1,0 +1,162 @@
+I"�a<p>Faça um programa que carregue três vetores nos quais serão armazenados os códigos, os salários e o tempo de serviço, em anos, de cinco funcionários. Posteriormente, o programa deverá:</p>
+
+<p>a) Receber um valor que corresponde ao salário a ser consultado e, em seguida, mostrar dois relatórios. Cada relatório deverá mostrar o código do funcionário e o salário. O primeiro relatório deve mostrar os funcionários que tem salário até o valor digitado e o segundo relatório deve mostrar os funcionários que possuem salário superior ao valor digitado. Caso não exista nenhum funcionário em algum dos relatórios, mostrar mensagem.</p>
+
+<p>b) Encontrar o menor salário pago, calcular e mostrar quantos funcionários tem salário igual ao menor salário e,posteriormente, mostrar os códigos desses funcionários.</p>
+
+<p>c) Gerar e mostrar um quarto vetor com os códigos dos funcionários que possuem tempo de serviço entre 2 e 4 anos e são isentos de impostos. Sabe-se que os funcionários isentos de impostos são aqueles que possuem salário inferior a 1500,00 R$. Caso nenhum funcionário preencha os requisitos, mostrar mensagem.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="cp">#include &lt;stdio.h&gt;
+</span>	<span class="cp">#include &lt;stdlib.h&gt;
+</span>	<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>	<span class="p">{</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"cls"</span><span class="p">);</span>
+	    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">numFunc</span><span class="p">;</span>
+	    <span class="kt">float</span> <span class="n">consultaSalario</span><span class="p">;</span>
+	    <span class="kt">float</span> <span class="n">matriz</span><span class="p">[</span><span class="mi">10</span><span class="p">][</span><span class="mi">3</span><span class="p">];</span>
+	    <span class="kt">int</span> <span class="n">linha</span><span class="p">,</span> <span class="n">coluna</span><span class="p">;</span>
+
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Informe a quantidade de funcionarios( Max 10 func.):  "</span> <span class="p">);</span>
+	    <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+
+	    <span class="n">numFunc</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+	    <span class="c1">//Carrega os 3 vetores</span>
+	    <span class="k">for</span><span class="p">(</span><span class="n">linha</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">linha</span> <span class="o">&lt;</span> <span class="n">numFunc</span> <span class="p">;</span> <span class="n">linha</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+	        <span class="n">printf</span><span class="p">(</span><span class="s">"Informe o codigo do funcionario: "</span><span class="p">);</span>
+	        <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+	        <span class="n">printf</span><span class="p">(</span><span class="s">"Informe o salario do funcionario (R$): "</span><span class="p">);</span>
+
+	        <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
+
+	        <span class="n">printf</span><span class="p">(</span><span class="s">"Tempo de serviуo do Funcionario: "</span><span class="p">);</span>
+
+	        <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">2</span><span class="p">]);</span>
+
+	        <span class="c1">//system("cls");</span>
+
+	        <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	    <span class="p">}</span>
+
+	    <span class="n">system</span><span class="p">(</span><span class="s">"cls"</span><span class="p">);</span> 
+
+	    <span class="k">for</span><span class="p">(</span><span class="n">linha</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">linha</span> <span class="o">&lt;</span> <span class="n">numFunc</span> <span class="p">;</span> <span class="n">linha</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">for</span><span class="p">(</span><span class="n">coluna</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">coluna</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="p">;</span> <span class="n">coluna</span><span class="o">++</span><span class="p">)</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"%.2f "</span><span class="p">,</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="n">coluna</span><span class="p">]);</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span> <span class="c1">//apзs cada linha ser impressa, um salto de linha</span>
+	    <span class="p">}</span>
+
+	    <span class="c1">// Item A</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">Consultar Salario (R$): "</span><span class="p">);</span>
+	    <span class="n">scanf</span><span class="p">(</span><span class="s">"%f"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">consultaSalario</span><span class="p">);</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+
+	    <span class="c1">//Relatorio 1</span>
+	    <span class="kt">float</span> <span class="n">minimoSal</span><span class="p">,</span> <span class="n">maximoSal</span><span class="p">;</span>
+	    <span class="kt">float</span> <span class="n">minSalario</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+	    <span class="kt">float</span> <span class="n">maxSalario</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+	    <span class="n">minSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	    <span class="n">maxSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Item A</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Relatorio 1</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Salarios abaixo de R$ %.2f </span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">consultaSalario</span><span class="p">);</span>
+
+	    <span class="k">for</span><span class="p">(</span><span class="n">linha</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">linha</span> <span class="o">&lt;</span> <span class="n">numFunc</span> <span class="p">;</span> <span class="n">linha</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span>  <span class="n">consultaSalario</span> <span class="p">){</span>
+	            <span class="n">minSalario</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span>
+	            <span class="n">minSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%.1f %.2f"</span><span class="p">,</span> <span class="n">minSalario</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">minSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span> <span class="c1">//apзs cada linha ser impressa, um salto de linha</span>
+	        <span class="p">}</span>
+	        <span class="n">minimoSal</span> <span class="o">=</span> <span class="n">minSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">;</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">minimoSal</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>  <span class="n">linha</span> <span class="o">==</span> <span class="n">numFunc</span><span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"Nao existe funcionario com salario menor que o consultado. </span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span>
+	            <span class="k">break</span><span class="p">;</span><span class="c1">//forуa a saьda imediata do loop</span>
+	        <span class="p">}</span>
+	    <span class="p">}</span>
+
+	    <span class="c1">//Relatorio 2</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Relatorio 2</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Salarios acima de R$ %.2f </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">consultaSalario</span><span class="p">);</span>
+	    <span class="k">for</span><span class="p">(</span><span class="n">linha</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">linha</span> <span class="o">&lt;</span> <span class="n">numFunc</span> <span class="p">;</span> <span class="n">linha</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span>  <span class="n">consultaSalario</span> <span class="p">){</span>
+	            <span class="n">maxSalario</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span>
+	            <span class="n">maxSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%.1f %.2f"</span><span class="p">,</span> <span class="n">maxSalario</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">maxSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span> <span class="c1">//apзs cada linha ser impressa, um salto de linha</span>
+	        <span class="p">}</span>      
+	        <span class="n">maximoSal</span> <span class="o">=</span> <span class="n">maxSalario</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">;</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">maximoSal</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>  <span class="n">linha</span> <span class="o">==</span> <span class="n">numFunc</span><span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"Nao existe funcionario com salario maior que o consultado. </span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span>
+	            <span class="k">break</span><span class="p">;</span><span class="c1">//forуa a saьda imediata do loop</span>
+	        <span class="p">}</span>
+	    <span class="p">}</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"Pause"</span><span class="p">);</span>
+
+	    <span class="c1">// Item B</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"cls"</span><span class="p">);</span>
+	    <span class="kt">float</span> <span class="n">menor</span><span class="p">;</span>
+	    <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">count</span><span class="p">;</span>
+	    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	    <span class="n">menor</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
+	    <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numFunc</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">menor</span><span class="p">){</span>
+	            <span class="n">menor</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
+	            <span class="c1">//printf("\nQuantidade de Pessoas com o Menor Salario: %d\n", count);</span>
+	            <span class="c1">//pos_i = i; //atualizando as posiушes</span>
+	            <span class="c1">//pos_j = j;</span>
+	        <span class="p">}</span>
+	    <span class="p">}</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Item B</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Menor Salario Pago: R$ %.2f</span><span class="se">\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">menor</span><span class="p">);</span>
+
+	    <span class="c1">//Contar quantos recebem o menor salarios</span>
+	    <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numFunc</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">menor</span><span class="p">){</span>
+	            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+	        <span class="p">}</span>
+	    <span class="p">}</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Quantos Funcionarios Recebem o menor Salario: %d</span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+
+	    <span class="c1">//imprimir todos com menor salario igual</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Funcionarios com Menor Salario</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+	    <span class="k">for</span><span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numFunc</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">menor</span><span class="p">){</span>
+	            <span class="c1">//imprimir todos com menor salario igual</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"%.1f %.2f"</span><span class="p">,</span> <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">matriz</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
+	            <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span> <span class="c1">//apзs cada linha ser impressa, um salto de linh</span>
+	        <span class="p">}</span>
+	    <span class="p">}</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"pause"</span><span class="p">);</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"cls"</span><span class="p">);</span>
+
+	    <span class="c1">//Item C</span>
+	    <span class="kt">float</span> <span class="n">tempServico</span><span class="p">;</span>
+	    <span class="kt">float</span> <span class="n">tempoServico</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+	    <span class="n">tempoServico</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+	     <span class="c1">//imprimir todos os funcionarios isentos de imposto</span>
+	    <span class="n">printf</span><span class="p">(</span><span class="s">"Funcionarios Isentos de Imposto</span><span class="se">\n\n</span><span class="s">"</span><span class="p">);</span>
+
+	    <span class="k">for</span><span class="p">(</span><span class="n">linha</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">linha</span> <span class="o">&lt;</span> <span class="n">numFunc</span> <span class="p">;</span> <span class="n">linha</span><span class="o">++</span><span class="p">){</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;=</span>  <span class="mi">2</span> <span class="o">&amp;&amp;</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">1500</span><span class="p">){</span>
+	            <span class="n">tempoServico</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span>
+	            <span class="n">tempoServico</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
+	            <span class="n">tempoServico</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">matriz</span><span class="p">[</span><span class="n">linha</span><span class="p">][</span><span class="mi">2</span><span class="p">];</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">%.1f %.2f %.1f "</span><span class="p">,</span><span class="n">tempoServico</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">tempoServico</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">atempoServico</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span> <span class="c1">//apзs cada linha ser impressa, um salto de linha</span>
+	        <span class="p">}</span>
+	        <span class="n">tempServico</span> <span class="o">=</span> <span class="n">tempoServico</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">;</span>
+	        <span class="k">if</span><span class="p">(</span><span class="n">tempServico</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span>  <span class="n">linha</span> <span class="o">==</span> <span class="n">numFunc</span><span class="o">-</span><span class="mi">1</span><span class="p">){</span>
+	            <span class="n">printf</span><span class="p">(</span><span class="s">"Nao existe nenhum Funcionario Isento de Imposto. </span><span class="se">\n\n\n</span><span class="s">"</span><span class="p">);</span>
+	            <span class="k">break</span><span class="p">;</span><span class="c1">//forуa a saьda imediata do loop</span>
+	        <span class="p">}</span>
+	    <span class="p">}</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"pause"</span><span class="p">);</span>
+	    <span class="n">system</span><span class="p">(</span><span class="s">"cls"</span><span class="p">);</span>
+	<span class="p">}</span>
+</code></pre></div></div>
+
+:ET

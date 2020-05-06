@@ -1,0 +1,33 @@
+I"v<p><strong>INTRODUÇÃO</strong></p>
+
+<p>Sou usuário do Windows e já tive bastante problemas de conexão, simplesmente não entrava em nenhum site, nas minhas pesquisas vários tutoriais indicavam pra reinstalar o navegador, testar outro navegador, entrar no modo anônimo, limpar o cache, redefinir o Protocolo IP, desabilitar o Proxy no DNS e nada disso resolvia, foi então que resolvi buscar comandos avançados do Prompt de Comando que reiniciasse as configurações de rede.</p>
+
+<ol>
+  <li>
+    <p>Para abrir o Prompt vá no <em>Menu Iniciar</em>, em seguida na pasta Acessórios.</p>
+
+    <p><img src="/assets/img/foto-post1.png" alt="acessorios" /></p>
+  </li>
+  <li>
+    <p>Tela do Prompt</p>
+
+    <p><img src="/assets/img/foto-post2.png" alt="acessorios" /></p>
+  </li>
+  <li>
+    <p>Digite os seguintes comandos:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> C:\&gt;NETSH INT IP RESET all
+ C:\&gt;netsh winsock reset all
+ C:\&gt;ipconfig /release 
+ C:\&gt;Ipconfig /flushdns
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Reinicie o computador</p>
+  </li>
+</ol>
+
+<p><strong>FINALIZANDO</strong></p>
+
+<p>O Windows fornece essas e outras tantas ferramentas com interface gráfica simplificada. Para administrar um servidor, conhecer rotinas de linha comando é muito útil e ajudam a efetuar a sua execução com mais velocidade.</p>
+:ET
