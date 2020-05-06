@@ -1,6 +1,5 @@
 title: Blog | Gustavo Siebra
-description: > # this means to ignore newlines until "baseurl:"
-  This blog about programming, data science, civil engineering. 
+description: This blog about programming, data science, civil engineering. # this means to ignore newlines until "baseurl:"
 permalink: ':title/'
 baseurl: #"/flexible-jekyll" # the subpath of your site, e.g. /blog
 url: "https://gustavosiebra.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -18,7 +17,7 @@ social-youtube: gustavosiebra # add your Youtube handle
 social-email: gustavosiebra@gmail.com # add your Email address
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier: #mr-brown # add your discus identifier
 
 # Tracker
 analytics: UA-165697389-1 # Google Analytics
