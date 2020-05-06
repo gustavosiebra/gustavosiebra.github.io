@@ -21,7 +21,7 @@ c. Gerar e mostrar um quarto vetor com os códigos dos funcionários que possuem
 ```c++
 #include <stdio.h>
 #include <stdlib.h>
-int main()	{
+int main(){
     system("cls");
     int n, numFunc;
     float consultaSalario;
@@ -35,7 +35,7 @@ int main()	{
     printf("\n");
 
     //Carrega os 3 vetores
-    for(linha = 0 ; linha < numFunc ; linha++) {
+    for(linha = 0 ; linha < numFunc ; linha++){
         printf("Informe o codigo do funcionario: ");
         scanf("%f", &matriz[linha][0]);
         printf("Informe o salario do funcionario (R$): ");

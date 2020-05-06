@@ -29,5 +29,6 @@ Sou usuário do Windows e já tive bastante problemas de conexão, simplesmente 
 
 4. Reinicie o computador
 
-	O Windows oferece várias soluções por meio da interface gráfica simplificada, usar a linha de comando requer mais conhecimento, sendo mais utlizado por quem administra servidores, executando rotinas complexas com mais velocidade e segurança. 
+---
+O Windows oferece várias soluções por meio da interface gráfica simplificada, usar a linha de comando requer mais conhecimento, sendo mais utlizado por quem administra servidores, executando rotinas complexas com mais velocidade e segurança. 
 
