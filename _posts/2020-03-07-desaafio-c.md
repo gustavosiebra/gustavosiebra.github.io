@@ -18,7 +18,7 @@ b. Encontrar o menor salário pago, calcular e mostrar quantos funcionários tem
 
 c. Gerar e mostrar um quarto vetor com os códigos dos funcionários que possuem tempo de serviço entre 2 e 4 anos e são isentos de impostos. Sabe-se que os funcionários isentos de impostos são aqueles que possuem salário inferior a 1500,00 R$. Caso nenhum funcionário preencha os requisitos, mostrar mensagem.
 
-```c++
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
