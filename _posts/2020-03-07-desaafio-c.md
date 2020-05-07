@@ -10,14 +10,7 @@ Um tempo atrás um amigo recém ingresso no curso de Ciências da Computação p
 
 ---
 
-Faça um programa que carregue três vetores nos quais serão armazenados os códigos, os salários e o tempo de serviço, em anos, de cinco funcionários. Posteriormente, o programa deverá:
-
-> a) Receber um valor que corresponde ao salário a ser consultado e, em seguida, mostrar dois relatórios. Cada relatório deverá mostrar o código do funcionário e o salário. O primeiro relatório deve mostrar os funcionários que tem salário até o valor digitado e o segundo relatório deve mostrar os funcionários que possuem salário superior ao valor digitado. Caso não exista nenhum funcionário em algum dos relatórios, mostrar mensagem.
-
-b) Encontrar o menor salário pago, calcular e mostrar quantos funcionários tem salário igual ao menor salário e,posteriormente, mostrar os códigos desses funcionários. 
-
-c) Gerar e mostrar um quarto vetor com os códigos dos funcionários que possuem tempo de serviço entre 2 e 4 anos e são isentos de impostos. Sabe-se que os funcionários isentos de impostos são aqueles que possuem salário inferior a 1500,00 R$. Caso nenhum funcionário preencha os requisitos, mostrar mensagem.
-
+Faça um programa que carregue três vetores nos quais serão armazenados os códigos, os salários e o tempo de serviço, em anos, de cinco funcionários. 
 
 {% highlight cpp %}
 #include <stdio.h>
@@ -57,119 +50,132 @@ int main(){
     }
     system("Pause");
     system("cls");
-    // Item A
-    printf("Item A\n");
-    printf("\n\nConsultar Salario (R$): ");
-    scanf("%f", &consultaSalario);
-    printf("\n");
-
-    //Relatorio 1
-    float minimoSal, maximoSal;
-    float minSalario[2];
-    float maxSalario[2];
-    minSalario[1] = (0);
-    maxSalario[1] = (0);
-
-    printf("Relatorio 1\n\n");
-    printf("Salarios abaixo de R$ %.2f \n\n", consultaSalario);
-
-    for(linha = 0 ; linha < numFunc ; linha++){
-        if(matriz[linha][1] <=  consultaSalario ){
-            minSalario[0] = matriz[linha][0];
-            minSalario[1] = matriz[linha][1];
-            printf("\n%.1f %.2f", minSalario[0], minSalario[1]);
-            printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linha
-        }
-        minimoSal = minSalario[1] ;
-        if(minimoSal == 0 &&  linha == numFunc-1){
-            printf("Nao existe funcionario com salario menor que o consultado. \n\n\n");
-            break;//forуa a saьda imediata do loop
-        }
-    }
-    system("Pause");
-    system("cls");
-    //Relatorio 2
-    printf("\nRelatorio 2\n");
-    printf("\nSalarios acima de R$ %.2f \n", consultaSalario);
-    for(linha = 0 ; linha < numFunc ; linha++){
-        if(matriz[linha][1] >  consultaSalario ){
-            maxSalario[0] = matriz[linha][0];
-            maxSalario[1] = matriz[linha][1];
-            printf("\n%.1f %.2f", maxSalario[0], maxSalario[1]);
-            printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linha
-        }      
-        maximoSal = maxSalario[1] ;
-        if(maximoSal == 0 &&  linha == numFunc-1){
-            printf("Nao existe funcionario com salario maior que o consultado. \n\n\n");
-            break;//forуa a saьda imediata do loop
-        }
-    }
-    system("Pause");
-
-    // Item B
-    system("cls");
-    float menor;
-    int i, count;
-    count = 0;
-    menor = matriz[0][1];
-    for(i = 0; i < numFunc; i++){
-        if(matriz[i][1] < menor){
-            menor = matriz[i][1];
-            //printf("\nQuantidade de Pessoas com o Menor Salario: %d\n", count);
-            //pos_i = i; //atualizando as posiушes
-            //pos_j = j;
-        }
-    }
-    printf("\nItem B\n\n");
-    printf("Menor Salario Pago: R$ %.2f\n\n", menor);
-
-    //Contar quantos recebem o menor salarios
-    for(i = 0; i < numFunc; i++){
-        if(matriz[i][1] == menor){
-            count++;
-        }
-    }
-    printf("Quantos Funcionarios Recebem o menor Salario: %d\n\n\n", count);
-
-    //imprimir todos com menor salario igual
-    printf("Funcionarios com Menor Salario\n\n");
-    for(i = 0; i < numFunc; i++){
-        if(matriz[i][1] == menor){
-            //imprimir todos com menor salario igual
-            printf("%.1f %.2f", matriz[i][0], matriz[i][1]);
-            count++;
-            printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linh
-        }
-    }
-    system("pause");
-    system("cls");
-
-    //Item C
-    printf("\nItem C\n\n");
-    float tempServico;
-    float tempoServico[3];
-    tempoServico[2] = (0);
-
-     //imprimir todos os funcionarios isentos de imposto
-    printf("Funcionarios Isentos de Imposto\n\n");
-
-    for(linha = 0 ; linha < numFunc ; linha++){
-        if(matriz[linha][2] >=  2 && matriz[linha][2] <= 4 && matriz[linha][1] < 1500){
-            tempoServico[0] = matriz[linha][0];
-            tempoServico[1] = matriz[linha][1];
-            tempoServico[2] = matriz[linha][2];
-            printf("\n%.1f %.2f %.1f ",tempoServico[0],tempoServico[1],tempoServico[2]);
-            printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linha
-        }
-        tempServico = tempoServico[2] ;
-        if(tempServico == 0 &&  linha == numFunc-1){
-            printf("Nao existe nenhum Funcionario Isento de Imposto. \n\n\n");
-            break;//forуa a saьda imediata do loop
-        }
-    }
-    system("pause");
-    system("cls");
-}
-
 {% endhighlight %}
-	
+
+a) Receber um valor que corresponde ao salário a ser consultado e, em seguida, mostrar dois relatórios. Cada relatório deverá mostrar o código do funcionário e o salário. O primeiro relatório deve mostrar os funcionários que tem salário até o valor digitado e o segundo relatório deve mostrar os funcionários que possuem salário superior ao valor digitado. Caso não exista nenhum funcionário em algum dos relatórios, mostrar mensagem.
+
+{% highlight cpp %}
+// Item A
+printf("Item A\n");
+printf("\n\nConsultar Salario (R$): ");
+scanf("%f", &consultaSalario);
+printf("\n");
+
+//Relatorio 1
+float minimoSal, maximoSal;
+float minSalario[2];
+float maxSalario[2];
+minSalario[1] = (0);
+maxSalario[1] = (0);
+
+printf("Relatorio 1\n\n");
+printf("Salarios abaixo de R$ %.2f \n\n", consultaSalario);
+
+for(linha = 0 ; linha < numFunc ; linha++){
+    if(matriz[linha][1] <=  consultaSalario ){
+        minSalario[0] = matriz[linha][0];
+        minSalario[1] = matriz[linha][1];
+        printf("\n%.1f %.2f", minSalario[0], minSalario[1]);
+        printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linha
+    }
+    minimoSal = minSalario[1] ;
+    if(minimoSal == 0 &&  linha == numFunc-1){
+        printf("Nao existe funcionario com salario menor que o consultado. \n\n\n");
+        break;//forуa a saьda imediata do loop
+    }
+}
+system("Pause");
+system("cls");
+//Relatorio 2
+printf("\nRelatorio 2\n");
+printf("\nSalarios acima de R$ %.2f \n", consultaSalario);
+for(linha = 0 ; linha < numFunc ; linha++){
+    if(matriz[linha][1] >  consultaSalario ){
+        maxSalario[0] = matriz[linha][0];
+        maxSalario[1] = matriz[linha][1];
+        printf("\n%.1f %.2f", maxSalario[0], maxSalario[1]);
+        printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linha
+    }      
+    maximoSal = maxSalario[1] ;
+    if(maximoSal == 0 &&  linha == numFunc-1){
+        printf("Nao existe funcionario com salario maior que o consultado. \n\n\n");
+        break;//forуa a saьda imediata do loop
+    }
+}
+system("Pause");
+{% endhighlight %}
+
+b) Encontrar o menor salário pago, calcular e mostrar quantos funcionários tem salário igual ao menor salário e,posteriormente, mostrar os códigos desses funcionários. 
+
+{% highlight cpp %}
+// Item B
+system("cls");
+float menor;
+int i, count;
+count = 0;
+menor = matriz[0][1];
+for(i = 0; i < numFunc; i++){
+    if(matriz[i][1] < menor){
+        menor = matriz[i][1];
+        //printf("\nQuantidade de Pessoas com o Menor Salario: %d\n", count);
+        //pos_i = i; //atualizando as posiушes
+        //pos_j = j;
+    }
+}
+printf("\nItem B\n\n");
+printf("Menor Salario Pago: R$ %.2f\n\n", menor);
+
+//Contar quantos recebem o menor salarios
+for(i = 0; i < numFunc; i++){
+    if(matriz[i][1] == menor){
+        count++;
+    }
+}
+printf("Quantos Funcionarios Recebem o menor Salario: %d\n\n\n", count);
+
+//imprimir todos com menor salario igual
+printf("Funcionarios com Menor Salario\n\n");
+for(i = 0; i < numFunc; i++){
+    if(matriz[i][1] == menor){
+        //imprimir todos com menor salario igual
+        printf("%.1f %.2f", matriz[i][0], matriz[i][1]);
+        count++;
+        printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linh
+    }
+}
+system("pause");
+system("cls");
+{% endhighlight %}
+
+c) Gerar e mostrar um quarto vetor com os códigos dos funcionários que possuem tempo de serviço entre 2 e 4 anos e são isentos de impostos. Sabe-se que os funcionários isentos de impostos são aqueles que possuem salário inferior a 1500,00 R$. Caso nenhum funcionário preencha os requisitos, mostrar mensagem.
+
+{% highlight cpp %}
+//Item C
+printf("\nItem C\n\n");
+float tempServico;
+float tempoServico[3];
+tempoServico[2] = (0);
+
+ //imprimir todos os funcionarios isentos de imposto
+printf("Funcionarios Isentos de Imposto\n\n");
+
+for(linha = 0 ; linha < numFunc ; linha++){
+    if(matriz[linha][2] >=  2 && matriz[linha][2] <= 4 && matriz[linha][1] < 1500){
+        tempoServico[0] = matriz[linha][0];
+        tempoServico[1] = matriz[linha][1];
+        tempoServico[2] = matriz[linha][2];
+        printf("\n%.1f %.2f %.1f ",tempoServico[0],tempoServico[1],tempoServico[2]);
+        printf("\n\n\n"); //apзs cada linha ser impressa, um salto de linha
+    }
+    tempServico = tempoServico[2] ;
+    if(tempServico == 0 &&  linha == numFunc-1){
+        printf("Nao existe nenhum Funcionario Isento de Imposto. \n\n\n");
+        break;//forуa a saьda imediata do loop
+    }
+}
+system("pause");
+system("cls");
+}
+{% endhighlight %}
+
+O código completo pode ser encontrado aqui.
