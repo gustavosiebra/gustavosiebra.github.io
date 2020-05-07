@@ -3,7 +3,7 @@ layout: post
 title:  "Prompt: Comandos de Rede"
 date:   2020-02-07 00:00:00
 description: # Primeiro post
-img: workflow.jpg # Add image post (optional)
+img: semconexao.jpg # Add image post (optional)
 ---
 
 Sou usuário do Windows e já tive bastante problemas de conexão, simplesmente não entrava em nenhum site, nas minhas pesquisas vários tutoriais indicavam pra reinstalar o navegador, testar outro navegador, entrar no modo anônimo, limpar o cache, redefinir o Protocolo IP, desabilitar o Proxy no DNS e nada disso resolvia, foi então que resolvi buscar comandos avançados do Prompt de Comando que reiniciasse as configurações de rede. 
