@@ -178,4 +178,4 @@ system("cls");
 }
 {% endhighlight %}
 
-O código completo pode ser encontrado aqui.
+O código completo pode ser encontrado no meu repositório do [`Github`](https://github.com/gustavosiebra/desafio-em-C/blob/master/desafio.c) pronto pra ser compilado e executado.
