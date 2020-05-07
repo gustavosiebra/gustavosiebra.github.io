@@ -2,7 +2,7 @@
 layout: post
 title: "Programação - Desafio em C"
 date: 2020-03-07 00:00:00
-description: Primeiro post
+description: Segundo post
 img: helloworld.jpg # Add image post (optional)
 ---
 
