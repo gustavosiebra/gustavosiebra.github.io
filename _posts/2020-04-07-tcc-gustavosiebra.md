@@ -2,7 +2,7 @@
 layout: post
 title:  "Análise de desempenho dos dispositivos de saída para reservatórios de detenção no controle de cheias urbanas em Fortaleza"
 date:   2020-04-07 00:00:00
-description: Terceiro post
+description: # Terceiro post
 img: diario1.jpg # Add image post (optional)
 ---
 

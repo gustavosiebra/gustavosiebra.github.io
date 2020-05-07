@@ -2,7 +2,7 @@
 layout: post
 title:  "Prompt: Comandos de Rede"
 date:   2020-02-07 00:00:00
-description: Primeiro post
+description: # Primeiro post
 img: semconexao.jpg # Add image post (optional)
 ---
 
