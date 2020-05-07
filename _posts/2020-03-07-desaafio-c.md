@@ -3,7 +3,7 @@ layout: post
 title: "Programação - Desafio em C"
 date: 2020-03-07 00:00:00
 description: # Segundo post
-img: helloworld.jpg # Add image post (optional)
+img: software.jpg # Add image post (optional)
 ---
 
 Um tempo atrás um amigo recém ingresso no curso de Ciências da Computação perguntou se eu sabia programar, o professor dele tinha passado um desafio valendo nota, lembrei do meu início, tive muitas dificuldades e por sorte convivi com pessoas fantásticas que sempre puderam me orientar, meu primeiro trabalho na faculdade era entrar com número de 1-1000 e exibir na tela por extenso, dificílimo na época. Bom, passando a nostalgia vamos ao desafio do colega e a minha resolução. 
