@@ -1,18 +1,0 @@
-I"s<h2 id="introdução">Introdução</h2>
-
-<p>Este trabalho foi realizado para a conclusão do curso em Engenharia civil, sendo apresentado na Unifor no dia 05/12/2019 e orientado pelo professor <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4768958U6&amp;tokenCaptchar=03AGdBq26AtO3S6rq5ZuHGLnlh-KRwciJwIq4wLMbHI7zsjyNS8m2VJ6Li7_oeW2vBSvYHQqSI0xuzvrO-KLLD-0Jrt75sagW63oDbin0AnZqfonLuRRdQaMLQQwj-2c_NJrv8XjAyDTO42YDgDLaE5W3FYPKfzWzDQKSOc170ByFRMksq7qOslj_4V4vv9VBAg1vCSStYqJMRbkU9-gwv04rjZ4YNxn6yAebZh1HJYecwKOYvG_HWMqvlb0U3fXXDcVjZiyjal7EcN9l2vPqwosFMoIZeD8BMBIQ-TaLQwRfVj-CsySy8u-kUVf_hccV97nOLFmplnXL3cTB49T7ClO3q6ZBbGzDsMAF8MnPl5DsMwZpNZSamk_EQniyaKoiyIxv7p_l3cCrq1H5eb16oIqrhID4sZQQQ2ms5VEBrKL9EtSHqPn5SCcRPS6kOQ84Ev5dX637jU1dX7R6i-0xyy4USx2FfmbKUHw">Anísio Meneses</a>. Todo o texto e apresentação foi desenvolvido utlizando o LaTeX, ótima ferramenta para trabalhos cientìficos que necessita de um certo conhecimento em programação, usei Overleaf, editor online e colaborativo.</p>
-
-<hr />
-
-<p><strong>Resumo</strong>: Estudos hidrológicos que possibilitem o entendimento da dinâmica das inundações são de grande importância para que existam avanços na prevenção e no controle dos impactos causados. Esses estudos baseiam-se na estimativa das vazões máximas que são atingidas em pontos críticos de uma bacia hidrográfica, para então serem dimensionados dispositivos que minimizem seus efeitos. Nas grandes cidades é comum deparar-se com situações de transtorno relacionadas às inundações. Visando isso, é imprescindível haver um estudo prévio para chegar à conclusão de alternativas que possam sanar tal situação. Este trabalho tem como foco avaliar o uso dos dispositivos de saída no reservatório de detenção, uma técnica compensatória, amenizando o que é causado pelo alto índice de impermeabilização, reduzindo o pico de vazão e tempo de retardo, além de trazer melhorias para outras áreas, como a da saúde pública, por exemplo. No desenvolvimento do trabalho, foram discutidas as bases teóricas da relação intensidade, duração e frequência das precipitações de Fortaleza, o método <em>Soil Conservation Service</em> (SCS), avaliando-se a extensão de suas simplificações e os limites de sua aplicabilidade, no caso de bacias hidrográficas urbanas, aspectos gerais dos dispositivos de controle de vazão e o modelo matemático do método de Puls utilizado para gerar a vazão de saída amortecida. Foram feitas várias simulações usando planilha eletrônica e o software para cálculo numérico <em>Matrix Laboratory</em> (MatLab) para diferentes tamanhos de bacias de contribuição, tempos de retorno, duração da chuva, orifícios e vertedouro seguidos de comparações.</p>
-
-<p><strong>Palavras-chave</strong>: Reservatório de detenção; Drenagem urbana; Técnica Compensatória; Hidrogama Unitário; método SCS; Método de Puls.</p>
-
-<p>Download:<br />
-<a href="https://www.dropbox.com/s/pfb2n1ff4xlxuwo/UNIFOR___TCC_Gustavo_Siebra.pdf?dl=0">TCC-GustavoSiebra</a><br />
-<a href="https://www.dropbox.com/s/mw7yvyxq42ij4ac/apresentacao_tcc_gustavo.pdf?dl=0">Apresentação-GustavoSiebra</a></p>
-
-<p>Para o trabalho foi feito a maquete eletrônica do reservatório de detenção.</p>
-
-<p><a href="http://www.youtube.com/watch?v=Cw6w8wIngww" title="maquete reservatório"><img src="http://img.youtube.com/vi/Cw6w8wIngww/0.jpg" alt="" /></a></p>
-:ET
