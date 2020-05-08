@@ -2,7 +2,7 @@
 layout: post
 title:  "Análise de desempenho dos dispositivos de saída para reservatórios de detenção no controle de cheias urbanas em Fortaleza"
 date:   2020-04-07 00:00:00
-description: # Terceiro post
+description: Este trabalho foi realizado para a conclusão do curso em Engenharia civil, sendo apresentado na Unifor no dia 05/12/2019 e orientado pelo professor Anísio Meneses. # Terceiro post
 img: diario1.jpg # Add image post (optional)
 ---
 

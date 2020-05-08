@@ -13,7 +13,9 @@ layout: main
       <span class="post-date">{{post.date | date: '%d/%m/%Y'}}&nbsp;&nbsp;&nbsp;</span>
     </div>
 
-    <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+    <!--  <p>{{ post.content | strip_html | truncatewords: 25 }}</p> -->
+
+    <a {{site.description}}>{{post.description}}</a>
 
     <!--  <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
     <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span> -->
