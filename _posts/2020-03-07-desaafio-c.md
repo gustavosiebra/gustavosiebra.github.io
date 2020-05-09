@@ -2,7 +2,7 @@
 layout: post
 title: "Programação - Desafio em C"
 date: 2020-03-07 00:00:00
-description: Teste para quem esta começando a programar usando entrada de dados, laços e vetor.  # Segundo post
+description: Teste para quem esta começando a programar, envolvendo entrada de dados, laços de repetição e vetor.  # Segundo post
 img: helloworld.jpg # Add image post (optional)
 ---
 
