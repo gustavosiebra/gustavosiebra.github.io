@@ -2,8 +2,8 @@
 layout: post
 title:  "Método dos Blocos Alternados usando Python"
 date:   2020-05-11 00:00:00
-description: Pensando na automazição do processo, usei programação para facilitar a vida de quem precisa fazer várias simulações para gerar gráficos e tabelas.
-img: # Add image post (optional)
+description: Pensando na automazição do processo, usei programação para facilitar a vida de quem precisa fazer várias simulações para gerar gráficos e tabelas desse método.
+img: blocosAlternados.JPG # Add image post (optional)
 mathjax: true
 ---
 
@@ -50,9 +50,18 @@ Vamos ao exemplo, foi adotado o passo de 6 minutos, tempo de duração de 60 min
 	8	|    54.00		|    85.61	|   77.05	|    3.71	|  	37.11	   	|   7.00			|		42.37
 	9	|    60.00		|    80.34	|   80.34	|    3.29	|  	32.85	   	|   9.00			|		32.85
 
-As figuras abaixo mostra os gráficos da tabela.
+As figuras abaixo são os gráficos da tabela.
 
 ![foto1]({{site.baseurl}}/assets/img/post4-img1.png)
 ![foto1]({{site.baseurl}}/assets/img/post4-img2.png)
 
-Fiz um vídeo explicando detalhadamente o código em python, o código esta disponível no [`GitHub`](https://github.com/gustavosiebra/blocos-alternados/blob/master/blocosAlternados.py). 
+Fiz um vídeo (**em construção**) explicando detalhadamente o código em python, está disponível no [`GitHub`](https://github.com/gustavosiebra/blocos-alternados/blob/master/blocosAlternados.py). 
+
+---
+
+**Fontes:**
+
+SILVA, F. O. E. da; JÚNIOR, F. F. R. P.; CAMPOS, J. N. B. **Equação de chuvas para Fortaleza-CE com dados do pluviógrafo da UFC**. [S.l.]: Revista DAE. N 192, 2013.
+
+TOMAZ,   P. **Curso   de   Manejo   de   águas   pluviais**.   2010.   Acessadoem 19-Novembro-2019. Disponível em:  <https://www.passeidireto.com/arquivo/66227801/apostila-prof-plinio-metodo-dos-blocos-alternados>.
+
