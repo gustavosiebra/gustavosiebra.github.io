@@ -1,0 +1,154 @@
+I"� <p>Segundo Tomaz (2010), o método dos blocos alternados é de simples aplicação, se comparado a outros métodos de determinação da chuva de projeto. O primeiro passo do método é calcular, as intensidades da chuva para cada período de tempo e tempo de retorno, cada duração gera um bloco, que pode determinar a altura da lâmina precipitada e o limite da duração crítica do evento (que é normalmente o tempo de concentração da área contribuinte). O segundo passo, que dá o nome ao método, reordena o hietograma de forma a posicionar o pico de forma centralizada. Cada bloco de chuva do hietograma é alternado no entorno do bloco do pico, à direita e à esquerda. É aconselhado que o \(\Delta\)t adotado seja menor que o tempo de concentração da  bacia que está sendo estudada.</p>
+<div style="text-align: justify">
+Para a vazão de projeto utilizei a equação de chuvas de Fortaleza que foi desenvolvida na Universidade Federal do Ceará (UFC), em 2011, com base nos últimos trinta anos de registros pluviográficos contínuos, ou seja, de 1970 a 1999 para obter a intensidade de chuva (SILVA; JÚNIOR; CAMPOS, 2013). Deve-se considerar uma precipitação uniformemente distribuída.</div>
+
+<p>Equação da chuva de Fortaleza:
+\begin{equation}
+\label{eq:idf-fortaleza}
+i = \frac{2345,29.Tr^{0,173}}{(t+28,31)^{0,904}}
+\end{equation}</p>
+
+<p>Onde: <br />
+Tr: é o período de retorno da precipitação em anos;<br />
+i: é a intensidade média de chuva mm/h para uma duração em minutos;<br />
+t: é o tempo de duração da chuva em minutos.</p>
+
+<div style="text-align: justify">
+O período de retorno (Tr), a duração da chuva (t) e a intensidade de chuva (i) estabelecem uma relação conhecida como curva IDF, representada por uma curva exponencial ou hiperbólica. É recomendado que cada cidade possua a sua, pois elas ajudam na determinação da vazão de projeto em obras. Na figura abaixo a curva IDF de Fortaleza para vários Trs.</div>
+
+<p><img src="/assets/img/curvaIDF.JPG" alt="foto1" /></p>
+
+<div style="text-align: justify">
+O tempo a ser utilizado deve ser maior ou igual ao tempo de concentração, pois ao ultrapassar o tempo de concentração mantendo-se a precipitação, a vazão continua constante mesmo que a duração da chuva seja maior. Porém, pode-se observar que a intensidade média da chuva e a duração são grandezas inversamente proporcionais, desse modo, a vazão diminui a partir do tempo de concentração. Para a curva da precipitação é o contrário, aumenta com o tempo. Na figura abaixo a curva de precipitação de Fortaleza para vários Trs.</div>
+
+<p><img src="/assets/img/precipitacaoFortaleza.JPG" alt="foto1" /></p>
+
+<div style="text-align: justify">
+ Tempo de retorno é o tempo médio entre dois eventos que cause falha na obra, ou seja, a ocorrência de uma chuva ou vazão superior aquela pré-estabelecida. Para escolhê-lo devem-se fazer estudos de base econômica e financeira considerando custos e benefícios da obra, porém esses aspectos são muito limitados pois existem eventos que não podem ser medidos. Devem-se considerar também os custos de operação e manutenção da obra. Outro problema é que quanto maior o tempo de retorno, maior o porte da obra, consequentemente o seu custo, e portanto, maior a interferência no ambiente urbano causando transtornos para a população. </div>
+
+<p>Vamos ao exemplo, foi adotado o passo de 6 minutos, tempo de duração de 60 minutos e tempo de retorno de 50 anos.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">índice</th>
+      <th style="text-align: center">tempo(min)</th>
+      <th style="text-align: center">i(mm/h)</th>
+      <th style="text-align: center">p(mm)</th>
+      <th style="text-align: center">\(\Delta\)p(mm)</th>
+      <th style="text-align: center">\(\Delta\)p/t(mm/h)</th>
+      <th style="text-align: center">índice ordenado</th>
+      <th style="text-align: center">i (mm/h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">6.00</td>
+      <td style="text-align: center">188.84</td>
+      <td style="text-align: center">18.88</td>
+      <td style="text-align: center">18.88</td>
+      <td style="text-align: center">188.84</td>
+      <td style="text-align: center">8.00</td>
+      <td style="text-align: center">37.11</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">12.00</td>
+      <td style="text-align: center">163.24</td>
+      <td style="text-align: center">32.65</td>
+      <td style="text-align: center">13.76</td>
+      <td style="text-align: center">137.64</td>
+      <td style="text-align: center">6.00</td>
+      <td style="text-align: center">48.98</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">18.00</td>
+      <td style="text-align: center">144.00</td>
+      <td style="text-align: center">43.20</td>
+      <td style="text-align: center">10.55</td>
+      <td style="text-align: center">105.51</td>
+      <td style="text-align: center">4.00</td>
+      <td style="text-align: center">68.68</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">24.00</td>
+      <td style="text-align: center">128.98</td>
+      <td style="text-align: center">51.59</td>
+      <td style="text-align: center">8.39</td>
+      <td style="text-align: center">83.93</td>
+      <td style="text-align: center">2.00</td>
+      <td style="text-align: center">105.51</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">30.00</td>
+      <td style="text-align: center">116.92</td>
+      <td style="text-align: center">58.46</td>
+      <td style="text-align: center">6.87</td>
+      <td style="text-align: center">68.68</td>
+      <td style="text-align: center">0.00</td>
+      <td style="text-align: center">188.84</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">36.00</td>
+      <td style="text-align: center">107.01</td>
+      <td style="text-align: center">64.21</td>
+      <td style="text-align: center">5.75</td>
+      <td style="text-align: center">57.48</td>
+      <td style="text-align: center">1.00</td>
+      <td style="text-align: center">137.64</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">42.00</td>
+      <td style="text-align: center">98.72</td>
+      <td style="text-align: center">69.11</td>
+      <td style="text-align: center">4.90</td>
+      <td style="text-align: center">48.98</td>
+      <td style="text-align: center">3.00</td>
+      <td style="text-align: center">83.93</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">48.00</td>
+      <td style="text-align: center">91.68</td>
+      <td style="text-align: center">73.34</td>
+      <td style="text-align: center">4.24</td>
+      <td style="text-align: center">42.37</td>
+      <td style="text-align: center">5.00</td>
+      <td style="text-align: center">57.48</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">54.00</td>
+      <td style="text-align: center">85.61</td>
+      <td style="text-align: center">77.05</td>
+      <td style="text-align: center">3.71</td>
+      <td style="text-align: center">37.11</td>
+      <td style="text-align: center">7.00</td>
+      <td style="text-align: center">42.37</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">60.00</td>
+      <td style="text-align: center">80.34</td>
+      <td style="text-align: center">80.34</td>
+      <td style="text-align: center">3.29</td>
+      <td style="text-align: center">32.85</td>
+      <td style="text-align: center">9.00</td>
+      <td style="text-align: center">32.85</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>As figuras abaixo mostra os gráficos da tabela.</p>
+
+<p><img src="/assets/img/post4-img1.png" alt="foto1" />
+<img src="/assets/img/post4-img2.png" alt="foto1" /></p>
+
+<p>Fiz um vídeo explicando detalhadamente o código em python de como implementar e executar, o código esta disponível no <a href="https://github.com/gustavosiebra/blocos-alternados/blob/master/blocosAlternados.py"><code class="highlighter-rouge">GitHub</code></a>.</p>
+:ET
