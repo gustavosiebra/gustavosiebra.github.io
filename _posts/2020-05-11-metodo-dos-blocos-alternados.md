@@ -56,5 +56,3 @@ As figuras abaixo mostra os gráficos da tabela.
 ![foto1]({{site.baseurl}}/assets/img/post4-img2.png)
 
 Fiz esse vídeo explicando detalhadamente o código em python de como implementar e executar, pode ser encontrado no [`GitHub`](https://github.com/gustavosiebra/blocos-alternados/blob/master/blocosAlternados.py). 
-
-[![](http://img.youtube.com/vi/Cw6w8wIngww/0.jpg)](http://www.youtube.com/watch?v=Cw6w8wIngww "maquete reservatório")
