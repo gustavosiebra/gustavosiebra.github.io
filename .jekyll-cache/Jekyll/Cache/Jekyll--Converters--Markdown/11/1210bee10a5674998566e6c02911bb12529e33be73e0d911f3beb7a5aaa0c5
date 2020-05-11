@@ -1,0 +1,132 @@
+I"N<p>Segundo Tomaz (2010), o método dos blocos alternados é de simples aplicação, se comparado a outros métodos de determinação da chuva de projeto. O primeiro passo do método é calcular, as intensidades da chuva para cada período de tempo e tempo de retorno, cada duração gera um bloco, que pode determinar a altura da lâmina precipitada e o limite da duração crítica do evento (que é normalmente o tempo de concentração da área contribuinte). O segundo passo, que dá o nome ao método, reordena o hietograma de forma a posicionar o pico de forma centralizada. Cada bloco de chuva do hietograma é alternado no entorno do bloco do pico, à direita e à esquerda. É aconselhado que o \(\Delta\)t adotado seja menor que o tempo de concentração da  bacia que está sendo estudada. Para a figura \ref{fig:blocosAlternados}, foi adotado o tempo de duração de 30 minutos e tempo de retorno de 10 anos.</p>
+
+<p>Para a vazão de projeto utiliza-se a equação de chuvas de Fortaleza que foi desenvolvida na Universidade Federal do Ceará (UFC), em 2011, com base nos últimos trinta anos de registros pluviográficos contínuos, ou seja, de 1970 a 1999 para obter a intensidade de chuva (SILVA; JÚNIOR; CAMPOS, 2013). Deve-se considerar uma precipitação uniformemente distribuída.</p>
+
+<p>Equação da chuva de Fortaleza:
+\begin{equation}
+\label{eq:idf-fortaleza}
+i = \frac{2345,29.Tr^{0,173}}{(t+28,31)^{0,904}}
+\end{equation}</p>
+
+<p><img src="/assets/img/post4-img1.png" alt="foto1" />
+ <img src="/assets/img/post4-img2.png" alt="foto1" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">índice</th>
+      <th style="text-align: center">tempo(min)</th>
+      <th style="text-align: center">i(mm/h)</th>
+      <th style="text-align: center">p(mm)</th>
+      <th style="text-align: center">\(\Delta\)p(mm)</th>
+      <th style="text-align: center">\(\Delta\)p/t(mm/h)</th>
+      <th style="text-align: center">índice ordenado</th>
+      <th style="text-align: center">i (mm/h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">6.00</td>
+      <td style="text-align: center">188.84</td>
+      <td style="text-align: center">18.88</td>
+      <td style="text-align: center">18.88</td>
+      <td style="text-align: center">188.84</td>
+      <td style="text-align: center">8.00</td>
+      <td style="text-align: center">37.11</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">12.00</td>
+      <td style="text-align: center">163.24</td>
+      <td style="text-align: center">32.65</td>
+      <td style="text-align: center">13.76</td>
+      <td style="text-align: center">137.64</td>
+      <td style="text-align: center">6.00</td>
+      <td style="text-align: center">48.98</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">18.00</td>
+      <td style="text-align: center">144.00</td>
+      <td style="text-align: center">43.20</td>
+      <td style="text-align: center">10.55</td>
+      <td style="text-align: center">105.51</td>
+      <td style="text-align: center">4.00</td>
+      <td style="text-align: center">68.68</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">24.00</td>
+      <td style="text-align: center">128.98</td>
+      <td style="text-align: center">51.59</td>
+      <td style="text-align: center">8.39</td>
+      <td style="text-align: center">83.93</td>
+      <td style="text-align: center">2.00</td>
+      <td style="text-align: center">105.51</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">30.00</td>
+      <td style="text-align: center">116.92</td>
+      <td style="text-align: center">58.46</td>
+      <td style="text-align: center">6.87</td>
+      <td style="text-align: center">68.68</td>
+      <td style="text-align: center">0.00</td>
+      <td style="text-align: center">188.84</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">36.00</td>
+      <td style="text-align: center">107.01</td>
+      <td style="text-align: center">64.21</td>
+      <td style="text-align: center">5.75</td>
+      <td style="text-align: center">57.48</td>
+      <td style="text-align: center">1.00</td>
+      <td style="text-align: center">137.64</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">42.00</td>
+      <td style="text-align: center">98.72</td>
+      <td style="text-align: center">69.11</td>
+      <td style="text-align: center">4.90</td>
+      <td style="text-align: center">48.98</td>
+      <td style="text-align: center">3.00</td>
+      <td style="text-align: center">83.93</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">48.00</td>
+      <td style="text-align: center">91.68</td>
+      <td style="text-align: center">73.34</td>
+      <td style="text-align: center">4.24</td>
+      <td style="text-align: center">42.37</td>
+      <td style="text-align: center">5.00</td>
+      <td style="text-align: center">57.48</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">54.00</td>
+      <td style="text-align: center">85.61</td>
+      <td style="text-align: center">77.05</td>
+      <td style="text-align: center">3.71</td>
+      <td style="text-align: center">37.11</td>
+      <td style="text-align: center">7.00</td>
+      <td style="text-align: center">42.37</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">60.00</td>
+      <td style="text-align: center">80.34</td>
+      <td style="text-align: center">80.34</td>
+      <td style="text-align: center">3.29</td>
+      <td style="text-align: center">32.85</td>
+      <td style="text-align: center">9.00</td>
+      <td style="text-align: center">32.85</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="http://www.youtube.com/watch?v=Cw6w8wIngww" title="maquete reservatório"><img src="http://img.youtube.com/vi/Cw6w8wIngww/0.jpg" alt="" /></a></p>
+:ET
