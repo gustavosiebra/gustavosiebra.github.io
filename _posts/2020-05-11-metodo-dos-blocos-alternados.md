@@ -55,7 +55,9 @@ As figuras abaixo são os gráficos da tabela.
 ![foto1]({{site.baseurl}}/assets/img/post4-img1.png)
 ![foto1]({{site.baseurl}}/assets/img/post4-img2.png)
 
-Fiz um vídeo (**em construção**) explicando detalhadamente o código em python, está disponível no [`GitHub`](https://github.com/gustavosiebra/blocos-alternados/blob/master/blocosAlternados.py). 
+Fiz um vídeo (figura abaixo) explicando detalhadamente o código em python, está disponível no [`GitHub`](https://github.com/gustavosiebra/blocos-alternados/blob/master/blocosAlternados.py). 
+
+[![](http://img.youtube.com/vi/hDPak1y4P_k/0.jpg)](http://www.youtube.com/watch?v=hDPak1y4P_k "código do método")
 
 ---
 
