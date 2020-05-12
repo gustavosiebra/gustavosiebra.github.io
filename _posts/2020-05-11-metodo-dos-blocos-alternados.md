@@ -50,7 +50,7 @@ Vamos ao exemplo, foi adotado o passo de 6 minutos, tempo de duração de 60 min
 	8	|    54.00		|    85.61	|   77.05	|    3.71	|  	37.11	   	|   7.00			|		42.37
 	9	|    60.00		|    80.34	|   80.34	|    3.29	|  	32.85	   	|   9.00			|		32.85
 
-As figuras abaixo são os gráficos da tabela.
+As figuras correspondem aos gráficos da tabela.
 
 ![foto1]({{site.baseurl}}/assets/img/post4-img1.png)
 ![foto1]({{site.baseurl}}/assets/img/post4-img2.png)
