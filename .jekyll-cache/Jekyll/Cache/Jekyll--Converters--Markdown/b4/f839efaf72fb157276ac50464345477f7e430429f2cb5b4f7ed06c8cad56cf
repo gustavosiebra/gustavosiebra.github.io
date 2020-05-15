@@ -1,6 +1,0 @@
-I"�<p>Segundo \citeonline{tomaz2009curso}, o método dos blocos alternados é de simples aplicação, se comparado a outros métodos de determinação da chuva de projeto. O primeiro passo do método é calcular, as intensidades da chuva para cada período de tempo e tempo de retorno, cada duração gera um bloco, que pode determinar a altura da lâmina precipitada e o limite da duração crítica do evento (que é normalmente o tempo de concentração da área contribuinte). O segundo passo, que dá o nome ao método, reordena o hietograma de forma a posicionar o pico de forma centralizada. Cada bloco de chuva do hietograma é alternado no entorno do bloco do pico, à direita e à esquerda. É aconselhado que o \(\Delta\)t adotado seja menor que o tempo de concentração da  bacia que está sendo estudada. Para a figura \ref{fig:blocosAlternados}, foi adotado o tempo de duração de 30 minutos e tempo de retorno de 10 anos.</p>
-
-<p>[i = \frac{2345,29.Tr^{0,173}}{(t+28,31)^{0,904}}]</p>
-
-<p><a href="http://www.youtube.com/watch?v=Cw6w8wIngww" title="maquete reservatório"><img src="http://img.youtube.com/vi/Cw6w8wIngww/0.jpg" alt="" /></a></p>
-:ET
