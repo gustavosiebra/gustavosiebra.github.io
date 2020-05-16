@@ -3,7 +3,7 @@ layout: post
 title:  "Método Soil Conservation Service - SCS"
 date:   2020-05-16 00:00:00
 description: Para facilitar a elaboração do hidrograma de projeto desenvolvi uma planilha utilizando o hidrograma unitário adimensional do método SCS.
-img: HidrogramadeProjetoArtigo.png # Add image post (optional)
+img: HidrogramadeProjetoArtigo.jpg # Add image post (optional)
 mathjax: true
 ---
 
