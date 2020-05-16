@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Método Soil Conservation Service - SCS"
-date:   2020-05-16 00:00:00
+date:   2020-05-19 00:00:00
 description: Para facilitar a elaboração do hidrograma de projeto desenvolvi uma planilha utilizando o hidrograma unitário adimensional do método SCS.
 img: HidrogramadeProjetoArtigo.jpg # Add image post (optional)
 mathjax: true
@@ -24,7 +24,7 @@ O CN é um parâmetro adimensional e seu valor varia entre 0 e 100, sendo que 0 
 Esta separação do escoamento no Método SCS é realizada através da a Equação:
 
 \begin{equation}
-\label{eq:VolumeSuperficial}
+\label{eq:VolumeSuperficial}\tag{1}
 V = \frac{(P - I_{a})^{2}}{P+S-I_{a}}
 \end{equation}
 
@@ -34,17 +34,17 @@ P: precipitação total acumulada (mm); \\
 $$I_{a}$$: perdas iniciais (mm); \\
 S: capacidade máxima de armazenamento da camada superior do solo (mm). \\
 
-O parâmetro $$I_{a}$$ representa as “perdas” de água que ocorrem antes do escoamento começar, ou seja, é a porção do volume de água precipitado que não é escoado superficialmente, seja por interceptação na vegetação, evaporação, infiltração ou outras causas. Esse é um parâmetro bastante variável, mas geralmente se relaciona com parâmetros do solo e da cobertura da bacia. As perdas iniciais  pode ser estimado para as condições médias como sendo 20% da capacidade de armazenamento do solo.
+O parâmetro $$I_{a}$$ representa as “perdas” de água que ocorrem antes do escoamento começar, ou seja, é a porção do volume de água precipitado que não é escoado superficialmente, seja por interceptação na vegetação, evaporação, infiltração ou outras causas. Esse é um parâmetro bastante variável, mas geralmente se relaciona com parâmetros do solo e da cobertura da bacia. As perdas iniciais  pode ser estimado para as condições médias como sendo 20% da capacidade de armazenamento do solo (equação \ref{eq:PerdasIniciais}).
 
 \begin{equation}
-\label{eq:PerdasIniciais}
+\label{eq:PerdasIniciais}\tag{2}
 I_{a} = 0,2.S
 \end{equation}
 
-A determinação do parâmetro foi estabelecida através de uma escala onde a variável é o parâmetro CN. A Equação abaixo representa relação entre o parâmetro e a variável e está convertida para unidades métricas.
+A determinação do parâmetro foi estabelecida através de uma escala onde a variável é o parâmetro CN. A Equação \ref{eq:CapacidadeMaximaArmazenamentoSolo} representa relação entre o parâmetro e a variável e está convertida para unidades métricas.
 
 \begin{equation}
-\label{eq:CapacidadeMaximaArmazenamentoSolo}
+\label{eq:CapacidadeMaximaArmazenamentoSolo}\tag{3}
 S = \frac{25400}{CN} - 254
 \end{equation}
 
@@ -61,6 +61,7 @@ Segundo USDA (1986, o tempo de concentração da bacia *($$T_c$$)* é um parâme
 Segundo Silveira (2005), o tempo de concentração é um parâmetro hidrológico difícil de ser estabelecido com critério pelos projetistas, pois há pouca informação sobre a aplicabilidade das diversas fórmulas empíricas disponíveis. Este exemplo usa a fórmula do tempo de concentração de Schaake, sendo utilizada para bacias urbanas menores que 0,7$$km^2$$.
 
 \begin{equation}
+	\label{eq:tempo-de-concentracao}\tag{4}
 	T_{c} = 0.0828.(L^{0.24}).(S^{-0.16}).(A_{imp}^{-0.26})
 \end{equation}
 
@@ -72,6 +73,7 @@ $$A_{imp}$$: fração de área impermeável, variando entre 0 e 1 (adimensional)
 O hidrograma unitário é definido por cinco parâmetros: a duração da chuva efetiva unitária (*D*); o tempo de pico *$$(t_{p})$$*, que é o tempo desde a metade da duração da chuva efetiva unitária até o pico de vazão do hidrograma unitário, calculado pela Equação:
 
 \begin{equation}
+	\tag{5}
     t_{p} = 0,6 . T_{c} 
 \end{equation}
 
@@ -81,6 +83,7 @@ $$T_{c}$$: tempo de concentração da bacia (horas).
 O tempo de subida do hidrograma *($$T_{p}$$)*, é o tempo desde o início do evento chuvoso até o pico do hidrograma unitário, calculado pela Equação:
 
 \begin{equation}
+	\tag{6}
     T_{p} = t_{p} + \frac{D}{2}
 \end{equation}
 
@@ -91,12 +94,14 @@ D: Duração da chuva efetiva unitária (horas).
 O tempo de base *($$t_{b}$$)*, é o tempo desde o início do evento chuvoso até o final do escoamento superficial no exutório da bacia, calculado pela Equação:
 
 \begin{equation}
+	\tag{7}
     t_{b} = T_{p} + 1,67.T_{p}
 \end{equation}
 
 A vazão de pico do hidrograma unitário (*$$q_{p}$$*), calculada pela Equação:
 
 \begin{equation}
+	\tag{8}
     q_{p} = \frac{0,208.A.P}{T_{p}}
 \end{equation}
 
@@ -135,7 +140,7 @@ A Figura abaixo mostra a relação da precipitação total e a parcela de precip
 
 Para obter o hidrograma de projeto deve-se associar a parcela de cada bloco que escoa a uma determinada precipitação efetiva unitária, fixando o tempo de duração, acha-se o hidrograma unitário dimensional, para então descobrir a vazão e o hidrograma do bloco. Aplicando os princípios da proporcionalidade e da superposição é possível calcular os hidrogramas resultantes de eventos complexos, a partir do hidrograma. Este cálculo é feito através da convolução das ordenadas de cada bloco. O hidrograma é, normalmente, definido como uma função em intervalos de tempo discretos. Na figura abaixo, o tempo de concentração foi determinado pela fórmula de Schaake, aplicável para bacias urbanas menores que 0,7km², adotando a área da bacia 40ha, área impermeável de 0,5 e declividade de 1% para uma chuva com tempo de duração de 60 minutos. Os valores q1, q2,...,$$q_{n}$$ se referem à aplicação de cada bloco da precipitação excedente em cada tempo, que será dividido pela precipitação e então multiplicado pela vazão do hidrograma unitário.
 
-![HidrogramadeProjetoArtigo]({{site.baseurl}}/assets/img/HidrogramadeProjetoArtigo.png)
+![HidrogramadeProjetoArtigo]({{site.baseurl}}/assets/img/HidrogramadeProjetoArtigo.jpg)
 
 Está disponível no [`Google Sheet`](https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing) a planilha e em breve irei fazer um vídeo que explica seu funcionamento.
 

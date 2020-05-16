@@ -9,10 +9,10 @@ mathjax: true
 
 Segundo Tomaz (2010), o método dos blocos alternados é de simples aplicação, se comparado a outros métodos de determinação da chuva de projeto. O primeiro passo do método é calcular, as intensidades da chuva para cada período de tempo e tempo de retorno, cada duração gera um bloco, que pode determinar a altura da lâmina precipitada e o limite da duração crítica do evento (que é normalmente o tempo de concentração da área contribuinte). O segundo passo, que dá o nome ao método, reordena o hietograma de forma a posicionar o pico de forma centralizada. Cada bloco de chuva do hietograma é alternado no entorno do bloco do pico, à direita e à esquerda. É aconselhado que o \\(\Delta\\)t adotado seja menor que o tempo de concentração da  bacia que está sendo estudada. 
 <div style="text-align: justify">
-Para a vazão de projeto utilizei a equação de chuvas de Fortaleza que foi desenvolvida na Universidade Federal do Ceará (UFC), em 2011, com base nos últimos trinta anos de registros pluviográficos contínuos, ou seja, de 1970 a 1999 para obter a intensidade de chuva (SILVA; JÚNIOR; CAMPOS, 2013). Deve-se considerar uma precipitação uniformemente distribuída.</div>
+Para a vazão de projeto utilizei a equação da chuva de Fortaleza que foi desenvolvida na Universidade Federal do Ceará (UFC), em 2011, com base nos últimos trinta anos de registros pluviográficos contínuos, ou seja, de 1970 a 1999 para obter a intensidade de chuva (SILVA; JÚNIOR; CAMPOS, 2013). Deve-se considerar uma precipitação uniformemente distribuída.</div>
 
 Equação da chuva de Fortaleza:
-\begin{equation}
+\begin{equation}\tag{1}
 \label{eq:idf-fortaleza}
 i = \frac{2345,29.Tr^{0,173}}{(t+28,31)^{0,904}}
 \end{equation}
