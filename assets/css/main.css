@@ -773,9 +773,11 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
   color: #515151;
-  background-color: #fbfbfb;
+  background-color: #ffffff;
+  /* background-color: #fbfbfb; */
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -885,6 +887,7 @@ table tfoot td {
 
 .wrapper {
   max-width: 1250px;
+  /*max-width: 1250px;*/ /*Gustavo Siebra*/
   position: relative;
 }
 
@@ -1001,7 +1004,8 @@ table tfoot td {
 }
 
 .content-box {
-  padding: 20px;
+  padding: 100px;
+  /*padding: 20px;*/ /*Gustavo Siebra*/
   padding-left: 260px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1101,7 +1105,7 @@ footer .copyright {
 }
 
 .post {
-  width: 100%;
+  width: 100%; /*Gustavo Siebra*/
   max-width: 100%;
   margin-bottom: 1.5rem;
   display: -webkit-box;
@@ -1118,8 +1122,8 @@ footer .copyright {
       -ms-flex-align: stretch;
           align-items: stretch;
   min-height: 11rem;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  /*-webkit-border-radius: 10px;
+          border-radius: 10px;*/ /*Gustavo Siebra*/
   overflow: hidden;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;

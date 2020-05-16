@@ -19,7 +19,9 @@ layout: main
         <h1 class="page-title">{{page.title}}</h1>
         <div class="page-date"><span>{{page.date | date: '%d/%m/%Y'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
       </header>
+      <div style="text-align: justify">
       {{content | markdownify}}
+      </div>
       <div class="page-footer">
         <div class="page-share">
           <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Compartilhar no Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"> </i></a>
