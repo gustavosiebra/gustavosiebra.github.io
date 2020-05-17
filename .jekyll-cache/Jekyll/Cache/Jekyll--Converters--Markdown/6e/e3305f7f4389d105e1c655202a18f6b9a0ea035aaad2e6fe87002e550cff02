@@ -1,0 +1,258 @@
+I"�7<h2 id="sumário">Sumário</h2>
+<h4 id="1-separação-do-escoamento">1. <a href="#Separação do escoamento">Separação do escoamento</a></h4>
+<h4 id="2-propagação-superficial">2. <a href="#Propagação superficial">Propagação superficial</a></h4>
+<h4 id="3-hidrograma-unitário">3. <a href="#Hidrograma unitário">Hidrograma unitário</a></h4>
+<h4 id="4-exemplo-prático">4. <a href="#Exemplo prático">Exemplo prático</a></h4>
+
+<h2 id="1-separação-do-escoamento-">1. Separação do escoamento <a name="Separação do escoamento"></a></h2>
+
+<p>A separação do escoamento é a etapa do método SCS que consiste na determinação volume de água que entra na bacia através da precipitação que será escoado superficialmente, através de um balanço hídrico. A precipitação que cai sobre uma bacia hidrográfica pode seguir quatro caminhos potenciais: parte da precipitação é interceptada pela vegetação e evaporada para a atmosfera; parte cairá sobre o solo e irá evaporar; parte irá infiltrar no solo; e o restante irá escoar superficialmente na bacia. A quantidade de precipitação e o parâmetro <em>Curve Number</em> (CN), irão determinar a quantidade de água que irá escoar na bacia e encontrar os cursos d’água superficiais.</p>
+
+<p>O parâmetro CN ou número de escoamento da bacia hidrográfica retrata as condições da camada superficial do solo, que pode variar desde uma cobertura muito permeável até uma cobertura completamente impermeável, e da camada superior de solo, que pode ter capacidade de infiltração alta ou baixa.</p>
+
+<p>O CN é um parâmetro adimensional e seu valor varia entre 0 e 100, sendo que 0 corresponde a um solo com capacidade de infiltração infinita e 100 corresponde a um solo totalmente impermeável (COLLISCHONN; DORNELLES, 2013).</p>
+
+<p>Esta separação do escoamento no Método SCS é realizada através da a Equação:</p>
+
+<p>\begin{equation}
+\label{eq:VolumeSuperficial}\tag{1}
+V = \frac{(P - I_{a})^{2}}{P+S-I_{a}}
+\end{equation}</p>
+
+<p>Onde: <br />
+V: volume superficial acumulado (mm); <br />
+P: precipitação total acumulada (mm); <br />
+\(I_{a}\): perdas iniciais (mm); <br />
+S: capacidade máxima de armazenamento da camada superior do solo (mm). \</p>
+
+<p>O parâmetro \(I_{a}\) representa as “perdas” de água que ocorrem antes do escoamento começar, ou seja, é a porção do volume de água precipitado que não é escoado superficialmente, seja por interceptação na vegetação, evaporação, infiltração ou outras causas. Esse é um parâmetro bastante variável, mas geralmente se relaciona com parâmetros do solo e da cobertura da bacia. As perdas iniciais  pode ser estimado para as condições médias como sendo 20% da capacidade de armazenamento do solo (equação \ref{eq:PerdasIniciais}).</p>
+
+<p>\begin{equation}
+\label{eq:PerdasIniciais}\tag{2}
+I_{a} = 0,2.S
+\end{equation}</p>
+
+<p>A determinação do parâmetro foi estabelecida através de uma escala onde a variável é o parâmetro CN. A Equação \ref{eq:CapacidadeMaximaArmazenamentoSolo} representa relação entre o parâmetro e a variável e está convertida para unidades métricas.</p>
+
+<p>\begin{equation}
+\label{eq:CapacidadeMaximaArmazenamentoSolo}\tag{3}
+S = \frac{25400}{CN} - 254
+\end{equation}</p>
+
+<h2 id="2-propagação-superficial-">2. Propagação superficial <a name="Propagação superficial"></a></h2>
+
+<p>O modelo SCS utiliza o hidrograma unitário sintético triangular, figura <a href="#hidrogramaSCS">1</a>. A forma do hidrograma unitário depende da área da bacia hidrográfica, da duração da chuva efetiva unitária e do tempo de concentração da bacia.
+<a name="hidrogramaSCS"></a>
+<img src="/assets/img/hidrogramaSCS.JPG" alt="hidrogramaSCS" />
+<em>Figura 1: Hidrograma unitário triangular SCS</em></p>
+
+<p>Tempo de concentração é o tempo que leva para que o escoamento chegue até um ponto de interesse, a partir do ponto hidraulicamente mais distante. No caso desse modelo, o ponto de interesse é o local onde será posicionado o reservatório.</p>
+
+<p>Segundo USDA (1986, o tempo de concentração da bacia <em>(\(T_c\))</em> é um parâmetro crítico do modelo SCS. Esse parâmetro influencia na forma e no pico do hidrograma de escoamento.</p>
+
+<p>Segundo Silveira (2005), o tempo de concentração é um parâmetro hidrológico difícil de ser estabelecido com critério pelos projetistas, pois há pouca informação sobre a aplicabilidade das diversas fórmulas empíricas disponíveis. Este exemplo usa a fórmula do tempo de concentração de Schaake, sendo utilizada para bacias urbanas menores que 0,7\(km^2\).</p>
+
+<p>\begin{equation}
+	\label{eq:tempo-de-concentracao}\tag{4}
+	T_{c} = 0.0828.(L^{0.24}).(S^{-0.16}).(A_{imp}^{-0.26})
+\end{equation}</p>
+
+<p>Onde: <br />
+L: comprimento do coletor pluvial ou canal principal (km);<br />
+S: declividade média do coletor pluvial ou canal principal (m/m);<br />
+\(A_{imp}\): fração de área impermeável, variando entre 0 e 1 (adimensional).</p>
+
+<p>O hidrograma unitário é definido por cinco parâmetros: a duração da chuva efetiva unitária (<em>D</em>); o tempo de pico <em>\((t_{p})\)</em>, que é o tempo desde a metade da duração da chuva efetiva unitária até o pico de vazão do hidrograma unitário, calculado pela Equação:</p>
+
+<p>\begin{equation}
+	\tag{5}
+    t_{p} = 0,6 . T_{c} 
+\end{equation}</p>
+
+<p>Onde: <br />
+\(T_{c}\): tempo de concentração da bacia (horas).</p>
+
+<p>O tempo de subida do hidrograma <em>(\(T_{p}\))</em>, é o tempo desde o início do evento chuvoso até o pico do hidrograma unitário, calculado pela Equação:</p>
+
+<p>\begin{equation}
+	\tag{6}
+    T_{p} = t_{p} + \frac{D}{2}
+\end{equation}</p>
+
+<p>Onde: <br />
+\(T_{p}\) : Tempo de subida do hidrograma (horas); <br />
+D: Duração da chuva efetiva unitária (horas).</p>
+
+<p>O tempo de base <em>(\(t_{b}\))</em>, é o tempo desde o início do evento chuvoso até o final do escoamento superficial no exutório da bacia, calculado pela Equação:</p>
+
+<p>\begin{equation}
+	\tag{7}
+    t_{b} = T_{p} + 1,67.T_{p}
+\end{equation}</p>
+
+<p>A vazão de pico do hidrograma unitário (<em>\(q_{p}\)</em>), calculada pela Equação:</p>
+
+<p>\begin{equation}
+	\tag{8}
+    q_{p} = \frac{0,208.A.P}{T_{p}}
+\end{equation}</p>
+
+<p>Onde: <br />
+A: Área da bacia hidrográfica (\(km^{2}\)); <br />
+P: Precipitação (mm).</p>
+
+<p>A chuva efetiva unitária deve ter uma duração 5 a 10 vezes menor que o tempo de concentração da bacia.</p>
+
+<h2 id="3-hidrograma-unitário-adimensional-">3. Hidrograma unitário adimensional <a name="Hidrograma unitário"></a></h2>
+
+<p>Usando o hidrograma unitário adimensional (figura <a href="#HU">2</a>) pode construir qualquer distribuição de chuva, dividindo em número de elementos da precipitação efetiva unitária e desenhando o hidrograma unitário para cada um. O hidrograma resultante seria então a soma de todos os hidrogramas unitários. O SCS desenvolveu uma base de dados de hidrogramas unitários a partir de parâmetros que descrevem as características das bacias hidrográficas, bem como os padrões de precipitação para locais geográficos específicos.</p>
+
+<p><a name="HU"></a>
+<img src="/assets/img/HU.JPG" alt="HU" />
+<em>Figura 2: Diagrama unitário adimensiona</em></p>
+
+<h2 id="4-exemplo-prático-">4. Exemplo prático <a name="Exemplo prático"></a></h2>
+
+<p>Na tabela 1 foi utilizado o tempo de duração de 60 minutos, tempo de retorno de 50 anos e CN da bacia contribuinte de 80, correspondente a uma chuva intensa em Fortaleza.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">índice</th>
+      <th style="text-align: center">td(min)</th>
+      <th style="text-align: center">precipitação(mm/h)</th>
+      <th style="text-align: center">td(h)</th>
+      <th style="text-align: center">precipitação(mm)</th>
+      <th style="text-align: center">precipitação acum.(mm)</th>
+      <th style="text-align: center">precipitação excedente – acum(mm)</th>
+      <th style="text-align: center">precipitação excedente em cada tempo(mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">37,1</td>
+      <td style="text-align: center">0,1</td>
+      <td style="text-align: center">3,71</td>
+      <td style="text-align: center">3,71</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">49</td>
+      <td style="text-align: center">0,2</td>
+      <td style="text-align: center">4,9</td>
+      <td style="text-align: center">8,61</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">18</td>
+      <td style="text-align: center">68,7</td>
+      <td style="text-align: center">0,3</td>
+      <td style="text-align: center">6,87</td>
+      <td style="text-align: center">15,48</td>
+      <td style="text-align: center">0,117</td>
+      <td style="text-align: center">0,12</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">24</td>
+      <td style="text-align: center">105,5</td>
+      <td style="text-align: center">0,4</td>
+      <td style="text-align: center">10,55</td>
+      <td style="text-align: center">26,03</td>
+      <td style="text-align: center">2,313</td>
+      <td style="text-align: center">2,2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">30</td>
+      <td style="text-align: center">188,8</td>
+      <td style="text-align: center">0,5</td>
+      <td style="text-align: center">18,88</td>
+      <td style="text-align: center">44,91</td>
+      <td style="text-align: center">10,84</td>
+      <td style="text-align: center">8,53</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">36</td>
+      <td style="text-align: center">137,6</td>
+      <td style="text-align: center">0,6</td>
+      <td style="text-align: center">13,76</td>
+      <td style="text-align: center">58,67</td>
+      <td style="text-align: center">19,304</td>
+      <td style="text-align: center">8,46</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: center">42</td>
+      <td style="text-align: center">83,9</td>
+      <td style="text-align: center">0,7</td>
+      <td style="text-align: center">8,39</td>
+      <td style="text-align: center">67,06</td>
+      <td style="text-align: center">25,072</td>
+      <td style="text-align: center">5,77</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">48</td>
+      <td style="text-align: center">57,5</td>
+      <td style="text-align: center">0,8</td>
+      <td style="text-align: center">5,75</td>
+      <td style="text-align: center">72,81</td>
+      <td style="text-align: center">29,231</td>
+      <td style="text-align: center">4,16</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: center">54</td>
+      <td style="text-align: center">42,4</td>
+      <td style="text-align: center">0,9</td>
+      <td style="text-align: center">4,24</td>
+      <td style="text-align: center">77,05</td>
+      <td style="text-align: center">32,389</td>
+      <td style="text-align: center">3,16</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">60</td>
+      <td style="text-align: center">32,9</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">3,29</td>
+      <td style="text-align: center">80,34</td>
+      <td style="text-align: center">34,888</td>
+      <td style="text-align: center">2,5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Tabela 1: Precipitação de projeto</em></p>
+
+<p>A Figura abaixo mostra a relação da precipitação total e a parcela de precipitação efetiva (que se transforma em escoamento superficial direto).</p>
+
+<p><img src="/assets/img/graficoPrecipitacao.JPG" alt="graficoPrecipitacao" />
+<em>Figura 3: Precipitação Total x Precipitação Excedente</em></p>
+
+<p>Para obter o hidrograma de projeto deve-se associar a parcela de cada bloco que escoa a uma determinada precipitação efetiva unitária, fixando o tempo de duração, acha-se o hidrograma unitário dimensional, para então descobrir a vazão e o hidrograma do bloco. Aplicando os princípios da proporcionalidade e da superposição é possível calcular os hidrogramas resultantes de eventos complexos, a partir do hidrograma. Este cálculo é feito através da convolução das ordenadas de cada bloco. O hidrograma é, normalmente, definido como uma função em intervalos de tempo discretos. Na figura abaixo, o tempo de concentração foi determinado pela fórmula de Schaake, aplicável para bacias urbanas menores que 0,7km², adotando a área da bacia 40ha, área impermeável de 0,5 e declividade de 1% para uma chuva com tempo de duração de 60 minutos. Os valores q1, q2,…,\(q_{n}\) se referem à aplicação de cada bloco da precipitação excedente em cada tempo, que será dividido pela precipitação e então multiplicado pela vazão do hidrograma unitário.</p>
+
+<p><img src="/assets/img/HidrogramadeProjetoArtigo.jpg" alt="HidrogramadeProjetoArtigo" />
+<em>Figura 4: Hidrograma de projeto</em></p>
+
+<p>Está disponível no <a href="https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing"><code class="highlighter-rouge">Google Sheet</code></a> a planilha e em breve irei fazer um vídeo que explica seu funcionamento.</p>
+
+<hr />
+
+<h2 id="fontes-"><strong>Fontes:</strong> <a name="Fontes"></a></h2>
+
+<p>COLLISCHONN, W.; DORNELLES, F. <strong>Hidrologia para engenharia e ciências ambientais</strong>.2013.</p>
+
+<p>USDA, S. <strong>Urban hydrology for small watersheds</strong>. 1986. 2–6 p.</p>
+
+<p>SILVEIRA, A. L. L. da. <strong>Desempenho de formulas de tempo de concentração em baciasurbanas e rurais</strong>. 2005. 5–23 p.</p>
+:ET

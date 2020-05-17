@@ -1,17 +1,11 @@
 ---
 layout: post
 title:  "Método Soil Conservation Service - SCS"
-date:   2020-05-19 00:00:00
+date:   2020-05-20 00:00:00
 description: Para facilitar a elaboração do hidrograma de projeto desenvolvi uma planilha utilizando o hidrograma unitário adimensional do método SCS.
 img: HidrogramadeProjetoArtigo.jpg # Add image post (optional)
 mathjax: true
 ---
-
-## Sumário
-#### 1. [Separação do escoamento](#Separação do escoamento)
-#### 2. [Propagação superficial](#Propagação superficial)
-#### 3. [Hidrograma unitário](#Hidrograma unitário)
-#### 4. [Exemplo prático](#Exemplo prático)
 
 ## 1. Separação do escoamento <a name="Separação do escoamento"></a>
 
@@ -50,9 +44,11 @@ S = \frac{25400}{CN} - 254
 
 ## 2. Propagação superficial <a name="Propagação superficial"></a>
 
-O modelo SCS utiliza o hidrograma unitário sintético triangular. A forma do hidrograma unitário depende da área da bacia hidrográfica, da duração da chuva efetiva unitária e do tempo de concentração da bacia.
+O modelo SCS utiliza o hidrograma unitário sintético triangular, figura [1](#hidrogramaSCS). A forma do hidrograma unitário depende da área da bacia hidrográfica, da duração da chuva efetiva unitária e do tempo de concentração da bacia.
+<a name="hidrogramaSCS"></a>
 
 ![hidrogramaSCS]({{site.baseurl}}/assets/img/hidrogramaSCS.JPG)
+*Figura 1: Hidrograma unitário triangular SCS* 
 
 Tempo de concentração é o tempo que leva para que o escoamento chegue até um ponto de interesse, a partir do ponto hidraulicamente mais distante. No caso desse modelo, o ponto de interesse é o local onde será posicionado o reservatório.
 
@@ -111,15 +107,18 @@ P: Precipitação (mm).
 
 A chuva efetiva unitária deve ter uma duração 5 a 10 vezes menor que o tempo de concentração da bacia.
 
-## 3. Hidrograma unitário <a name="Hidrograma unitário"></a>
+## 3. Hidrograma unitário adimensional <a name="Hidrograma unitário"></a>
 
-Usando o hidrograma unitário pode construir qualquer distribuição de chuva, dividindo em número de elementos da precipitação efetiva unitária e desenhando o hidrograma unitário para cada um. O hidrograma resultante seria então a soma de todos os hidrogramas unitários. O SCS desenvolveu uma base de dados de hidrogramas unitários a partir de parâmetros que descrevem as características das bacias hidrográficas, bem como os padrões de precipitação para locais geográficos específicos. 
+Usando o hidrograma unitário adimensional (figura [2](#HU)) pode construir qualquer distribuição de chuva, dividindo em número de elementos da precipitação efetiva unitária e desenhando o hidrograma unitário para cada um. O hidrograma resultante seria então a soma de todos os hidrogramas unitários. O SCS desenvolveu uma base de dados de hidrogramas unitários a partir de parâmetros que descrevem as características das bacias hidrográficas, bem como os padrões de precipitação para locais geográficos específicos. 
+<a name="HU"></a>
 
 ![HU]({{site.baseurl}}/assets/img/HU.JPG)
+*Figura 2: Diagrama unitário adimensional*
 
 ## 4. Exemplo prático <a name="Exemplo prático"></a>
 
- Na tabela abaixo foi utilizado o tempo de duração de 60 minutos, tempo de retorno de 50 anos e CN da bacia contribuinte de 80, correspondente a uma chuva intensa em Fortaleza.
+ Na tabela [1](#Precipitação)  foi utilizado o tempo de duração de 60 minutos, tempo de retorno de 50 anos e CN da bacia contribuinte de 80, correspondente a uma chuva intensa em Fortaleza.
+<a name="Precipitação"></a>
 
 índice	|	td(min)	|	precipitação(mm/h)	|	td(h)	|	precipitação(mm)	|	precipitação acum.(mm)	|	precipitação excedente – acum(mm)	|	precipitação excedente em cada tempo(mm)
 :--:|:-----:|:---------:|:-----:|:---------:|:---------:|:---------:|:------:
@@ -134,13 +133,19 @@ Usando o hidrograma unitário pode construir qualquer distribuição de chuva, d
 9	|	54	|	42,4	|	0,9	|	4,24	|	77,05	|	32,389	|	3,16
 10	|	60	|	32,9	|	1	|	3,29	|	80,34	|	34,888	|	2,5
 
-A Figura abaixo mostra a relação da precipitação total e a parcela de precipitação efetiva (que se transforma em escoamento superficial direto).
+*Tabela 1: Precipitação de projeto*
 
-![graficoPrecipitacao]({{site.baseurl}}/assets/img/graficoPrecipitacao.JPG)
+A Figura [3](#graficoPrecipitacao) mostra a relação da precipitação total e a parcela de precipitação efetiva (que se transforma em escoamento superficial direto).
+<a name="graficoPrecipitacao"></a>
 
-Para obter o hidrograma de projeto deve-se associar a parcela de cada bloco que escoa a uma determinada precipitação efetiva unitária, fixando o tempo de duração, acha-se o hidrograma unitário dimensional, para então descobrir a vazão e o hidrograma do bloco. Aplicando os princípios da proporcionalidade e da superposição é possível calcular os hidrogramas resultantes de eventos complexos, a partir do hidrograma. Este cálculo é feito através da convolução das ordenadas de cada bloco. O hidrograma é, normalmente, definido como uma função em intervalos de tempo discretos. Na figura abaixo, o tempo de concentração foi determinado pela fórmula de Schaake, aplicável para bacias urbanas menores que 0,7km², adotando a área da bacia 40ha, área impermeável de 0,5 e declividade de 1% para uma chuva com tempo de duração de 60 minutos. Os valores q1, q2,...,$$q_{n}$$ se referem à aplicação de cada bloco da precipitação excedente em cada tempo, que será dividido pela precipitação e então multiplicado pela vazão do hidrograma unitário.
+![graficoPrecipitacao]({{site.baseurl}}/assets/img/graficoPrecipitacaoArtigo.JPG)
+*Figura 3: Precipitação Total x Precipitação Excedente*
+
+Para obter o hidrograma de projeto deve-se associar a parcela de cada bloco que escoa a uma determinada precipitação efetiva unitária, fixando o tempo de duração, acha-se o hidrograma unitário dimensional, para então descobrir a vazão e o hidrograma do bloco. Aplicando os princípios da proporcionalidade e da superposição é possível calcular os hidrogramas resultantes de eventos complexos, a partir do hidrograma. Este cálculo é feito através da convolução das ordenadas de cada bloco. O hidrograma é, normalmente, definido como uma função em intervalos de tempo discretos. Na figura [4](#HidrogramadeProjetoArtigo), o tempo de concentração foi determinado pela fórmula de Schaake, aplicável para bacias urbanas menores que 0,7km², adotando a área da bacia 40ha, área impermeável de 0,5 e declividade de 1% para uma chuva com tempo de duração de 60 minutos. Os valores q1, q2,...,$$q_{n}$$ se referem à aplicação de cada bloco da precipitação excedente em cada tempo, que será dividido pela precipitação e então multiplicado pela vazão do hidrograma unitário.
+<a name="HidrogramadeProjetoArtigo"></a>
 
 ![HidrogramadeProjetoArtigo]({{site.baseurl}}/assets/img/HidrogramadeProjetoArtigo.jpg)
+*Figura 4: Hidrograma de projeto*
 
 Está disponível no [`Google Sheet`](https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing) a planilha e em breve irei fazer um vídeo que explica seu funcionamento.
 

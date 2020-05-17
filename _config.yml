@@ -24,10 +24,20 @@ analytics: UA-165697389-1 # Google Analytics
 
 # Build Settings
 markdown: kramdown
+
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-pandoc
+
+pandoc:
+  extensions:
+    - normalize
+    - smart
+    - mathjax
+    - csl: _styles/apa.csl
+    - bibliography: bibliography/references.bib
 
 paginate: 5
 paginate_path: "/page/:num"
