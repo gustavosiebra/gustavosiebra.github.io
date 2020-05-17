@@ -54,7 +54,7 @@ Vamos ao exemplo (tabela [1](#blocosAlternados)), foi adotado o passo de 6 minut
 
 *Tabela 1: Blocos alternados*
 
-As figuras [3 e 4](#Hietograma) correspondem aos gráficos da tabela.
+As figuras [3](#Hietograma) correspondem aos gráficos da tabela.
 <a name="Hietograma"></a>
 
 ![foto1]({{site.baseurl}}/assets/img/post4-img1.png)
@@ -67,7 +67,7 @@ Fiz um vídeo (figura abaixo) explicando detalhadamente o código em python que 
 
 ---
 
-**Fontes:**
+## **Fonte**
 
 SILVA, F. O. E. da; JÚNIOR, F. F. R. P.; CAMPOS, J. N. B. **Equação de chuvas para Fortaleza-CE com dados do pluviógrafo da UFC**. [S.l.]: Revista DAE. N 192, 2013.
 

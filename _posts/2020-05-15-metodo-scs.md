@@ -151,7 +151,7 @@ Está disponível no [`Google Sheet`](https://docs.google.com/spreadsheets/d/1oI
 
 ---
 
-## **Fontes:** <a name="Fontes"></a>
+## **Fonte** <a name="Fontes"></a>
 
 COLLISCHONN, W.; DORNELLES, F. **Hidrologia para engenharia e ciências ambientais**.2013.
 
