@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Método de Puls"
-date:   2020-05-20 00:00:00
+date:   2020-05-15 00:00:00
 description: Neste post trago os passos para implementação do método com planilha e código no MatLab para interpolação.
 img: hidrogramaAmortecidoArtigo.JPG # Add image post (optional)
 mathjax: true
