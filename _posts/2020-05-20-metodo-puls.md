@@ -186,7 +186,7 @@ $$Q_{p,ef}$$: Vazão de pico efluente $$m^{3}$$/s.
 
 ## Planilha
 
-Estou disponibilizanod a planilha no [Google Sheet](https://docs.google.com/spreadsheets/d/1JmaCMBwRMugF0TmqgCjL77jcqze8VlCfBts_VqC_haU/edit?usp=sharing) para auxiliar no cálculos e gráficos, **lembrando que o formato do reservatório é muito importante para o cálculo**.
+Estou disponibilizando a planilha no [Google Sheet](https://docs.google.com/spreadsheets/d/1JmaCMBwRMugF0TmqgCjL77jcqze8VlCfBts_VqC_haU/edit?usp=sharing) para auxiliar no cálculos e gráficos, **lembrando que o formato do reservatório é muito importante para o cálculo**.
 
 ---
 
