@@ -121,7 +121,7 @@ O (m³/s)	|	(2S/Δt)+O (m³/s)	|	(2S/Δt)-O (m³/s)
 
 *Tabela 2: Parâmetros para o cálculo da propagação.* 
 
-Com a informação do [hidrograma de projeto](http://gustavosiebra.github.io/metodo-scs/) é possível fazer a tabela [3](#Propagação), encontrei os valores (2S/Δt)-O e O de por interpolação com o auxílio da tabela [2](#Parâmetros1), para (2S/Δt)+O é feito a soma das colunas 4 e 5, dessa forma achamos a vazão amortecida pelo uso do reservatório. 
+Com a informação do [hidrograma de projeto](http://gustavosiebra.github.io/metodo-scs/) é possível fazer a tabela [3](#Propagação), encontrei os valores (2S/Δt)-O e O por interpolação com o auxílio da tabela [2](#Parâmetros1), para (2S/Δt)+O é feito a soma das colunas 4 e 5, dessa forma achamos a vazão amortecida pelo uso do reservatório. 
 <a name="Propagação"></a>
 
 índice|	tempo (h)	|	i (m³/s)	|	$$i_{1}$$+$$i_{2}$$ (m³/s)	|	(2S/Δt)+O (m³/s)	|	(2S/Δt)-O (m³/s)	|	O (m³/s)
@@ -186,7 +186,7 @@ $$Q_{p,ef}$$: Vazão de pico efluente $$m^{3}$$/s.
 
 ## Planilha
 
-Estou disponibilizano a planilha no [Google Sheet](https://docs.google.com/spreadsheets/d/1JmaCMBwRMugF0TmqgCjL77jcqze8VlCfBts_VqC_haU/edit?usp=sharing) para auxiliar no cálculos e gráficos, **lembrando que o formato do reservatório é muito importante para o cálculo**.
+Estou disponibilizanod a planilha no [Google Sheet](https://docs.google.com/spreadsheets/d/1JmaCMBwRMugF0TmqgCjL77jcqze8VlCfBts_VqC_haU/edit?usp=sharing) para auxiliar no cálculos e gráficos, **lembrando que o formato do reservatório é muito importante para o cálculo**.
 
 ---
 
