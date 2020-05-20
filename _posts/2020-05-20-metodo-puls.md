@@ -190,6 +190,10 @@ $$Q_{p,ef}$$: Vazão de pico efluente $$m^{3}$$/s.
 
 Estou disponibilizando a planilha no [Google Sheet](https://docs.google.com/spreadsheets/d/1JmaCMBwRMugF0TmqgCjL77jcqze8VlCfBts_VqC_haU/edit?usp=sharing) para auxiliar no cálculos e gráficos, **lembrando que o formato do reservatório é muito importante para o cálculo**.
 
+## Código
+
+Feito a planilha, então vá ao meu respositório do [Github](https://github.com/gustavosiebra/interpolacao-puls) e siga as instruções do arquivo **Readme.md**, o código retorna os valores da interpolação da vazão amortecida.
+
 ---
 
 ## **Fontes** 
