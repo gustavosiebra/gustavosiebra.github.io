@@ -120,7 +120,7 @@ Usando o hidrograma unitário adimensional (figura [2](#HU)) pode construir qual
  Na tabela [1](#Precipitação)  foi utilizado o tempo de duração de 60 minutos, tempo de retorno de 50 anos e CN da bacia contribuinte de 80, correspondente a uma chuva intensa em Fortaleza.
 <a name="Precipitação"></a>
 
-índice	|	td(min)	|	precipitação(mm/h)	|	td(h)	|	precipitação(mm)	|	precipitação acum.(mm)	|	precipitação excedente – acum(mm)	|	precipitação excedente em cada tempo(mm)
+índice	|	td(min)	|	i(mm/h)	|	td(h)	|	precipitação(mm)	|	precipitação acum.(mm)	|	precipitação excedente – acum(mm)	|	precipitação excedente em cada tempo(mm)
 :--:|:-----:|:---------:|:-----:|:---------:|:---------:|:---------:|:------:
 1	|	6	|	37,1	|	0,1	|	3,71	|	3,71	|	0		|	0
 2	|	12	|	49		|	0,2	|	4,9		|	8,61	|	0		|	0

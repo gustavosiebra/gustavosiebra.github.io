@@ -121,50 +121,52 @@ O (m³/s)	|	(2S/Δt)+O (m³/s)	|	(2S/Δt)-O (m³/s)
 
 *Tabela 2: Parâmetros para o cálculo da propagação.* 
 
-Com a informação do [hidrograma de projeto](http://gustavosiebra.github.io/metodo-scs/) é possível fazer a tabela [3](#Propagação), encontrei os valores (2S/Δt)-O e O por interpolação com o auxílio da tabela [2](#Parâmetros1), para (2S/Δt)+O é feito a soma das colunas 4 e 5, dessa forma achamos a vazão amortecida pelo uso do reservatório. 
+Com a informação do [hidrograma de projeto](http://gustavosiebra.github.io/metodo-scs/) é possível fazer a tabela [3](#Propagação), para encontrar o valor de (2S/Δt)+O é feito a soma da linha anterior das colunas 4 e 5, já os valores (2S/Δt)-O e O deve ser feito interpolação com o auxílio da tabela [2](#Parâmetros1) e do parametro (2S/Δt)+O, dessa forma achamos a vazão amortecida pelo uso do reservatório. 
 <a name="Propagação"></a>
 
-índice|	tempo (h)	|	i (m³/s)	|	$$i_{1}$$+$$i_{2}$$ (m³/s)	|	(2S/Δt)+O (m³/s)	|	(2S/Δt)-O (m³/s)	|	O (m³/s)
+índice|	tempo (h)	|	i (m³/s)	|	$$i_{1}$$+$$i_{2}$$ (m³/s)	|	(2S/Δt)-O (m³/s)	|	(2S/Δt)+O (m³/s)	|	O (m³/s)
 :----------------:	|	:----------------:	|	:----------------:	:----------------:	|	:----------------:	|	:----------------:	:----------------:	|	:----------------:
-1	|	0,10	|	0,000	|	0,000	|	0,000	|	0,000	|	0,000
-2	|	0,20	|	0,000	|	0,002	|	0,000	|	0,000	|	0,000
-3	|	0,30	|	0,002	|	0,044	|	0,002	|	0,002	|	0,000
-4	|	0,40	|	0,042	|	0,310	|	0,046	|	0,044	|	0,001
-5	|	0,50	|	0,268	|	1,106	|	0,354	|	0,340	|	0,007
-6	|	0,60	|	0,838	|	2,660	|	1,446	|	1,390	|	0,028
-7	|	0,70	|	1,822	|	4,812	|	4,050	|	3,893	|	0,079
-8	|	0,80	|	2,990	|	6,966	|	8,705	|	8,367	|	0,169
-9	|	0,90	|	3,976	|	8,549	|	15,333	|	14,798	|	0,268
-10	|	1,00	|	4,573	|	9,281	|	23,347	|	22,654	|	0,346
-11	|	1,10	|	4,708	|	9,103	|	31,935	|	31,110	|	0,412
-12	|	1,20	|	4,395	|	8,159	|	40,213	|	38,681	|	0,766
-13	|	1,30	|	3,764	|	6,783	|	46,839	|	42,967	|	1,936
-14	|	1,40	|	3,019	|	5,333	|	49,750	|	44,508	|	2,621
-15	|	1,50	|	2,314	|	4,022	|	49,841	|	44,556	|	2,643
-16	|	1,60	|	1,708	|	2,935	|	48,578	|	43,899	|	2,339
-17	|	1,70	|	1,227	|	2,108	|	46,834	|	42,964	|	1,935
-18	|	1,80	|	0,881	|	1,517	|	45,072	|	41,905	|	1,583
-19	|	1,90	|	0,636	|	1,097	|	43,423	|	40,916	|	1,254
-20	|	2,00	|	0,461	|	0,793	|	42,013	|	40,041	|	0,986
-21	|	2,10	|	0,332	|	0,572	|	40,834	|	39,150	|	0,842
-22	|	2,20	|	0,240	|	0,414	|	39,723	|	38,311	|	0,706
-23	|	2,30	|	0,174	|	0,299	|	38,725	|	37,558	|	0,584
-24	|	2,40	|	0,125	|	0,217	|	37,857	|	36,902	|	0,477
-25	|	2,50	|	0,092	|	0,159	|	37,119	|	36,224	|	0,448
-26	|	2,60	|	0,067	|	0,115	|	36,382	|	35,496	|	0,443
-27	|	2,70	|	0,048	|	0,080	|	35,610	|	34,735	|	0,438
-28	|	2,80	|	0,032	|	0,052	|	34,815	|	33,950	|	0,432
-29	|	2,90	|	0,020	|	0,032	|	34,002	|	33,148	|	0,427
-30	|	3,00	|	0,012	|	0,018	|	33,180	|	32,337	|	0,421
-31	|	3,10	|	0,006	|	0,009	|	32,355	|	31,525	|	0,415
-32	|	3,20	|	0,003	|	0,004	|	31,535	|	30,716	|	0,409
-33	|	3,30	|	0,001	|	0,001	|	30,721	|	29,913	|	0,404
-34	|	3,40	|	0,000	|	0,000	|	29,915	|	29,120	|	0,398
-35	|	3,50	|	0,000	|	0,000	|	29,121	|	28,337	|	0,392
+1	|	0,1	|	0		|	0		|	0,000	|	0,000	|	0
+2	|	0,2	|	0		|	0,002	|	0,000	|	0,000	|	0
+3	|	0,3	|	0,002	|	0,044	|	0,002	|	0,002	|	0
+4	|	0,4	|	0,042	|	0,31	|	0,043	|	0,046	|	0,001
+5	|	0,5	|	0,268	|	1,106	|	0,333	|	0,353	|	0,007
+6	|	0,6	|	0,838	|	2,66	|	1,356	|	1,439	|	0,028
+7	|	0,7	|	1,822	|	4,812	|	3,783	|	4,016	|	0,079
+8	|	0,8	|	2,99	|	6,966	|	8,098	|	8,595	|	0,169
+9	|	0,9	|	3,976	|	8,549	|	14,273	|	15,064	|	0,268
+10	|	1	|	4,573	|	9,281	|	21,801	|	22,822	|	0,346
+11	|	1,1	|	4,708	|	9,103	|	29,867	|	31,082	|	0,412
+12	|	1,2	|	4,395	|	8,159	|	37,343	|	38,970	|	0,766
+13	|	1,3	|	3,764	|	6,783	|	41,772	|	45,501	|	1,936
+14	|	1,4	|	3,019	|	5,333	|	43,505	|	48,555	|	2,621
+15	|	1,5	|	2,314	|	4,022	|	43,652	|	48,838	|	2,643
+16	|	1,6	|	1,708	|	2,935	|	43,050	|	47,674	|	2,339
+17	|	1,7	|	1,227	|	2,108	|	42,061	|	45,985	|	1,935
+18	|	1,8	|	0,881	|	1,517	|	40,978	|	44,169	|	1,583
+19	|	1,9	|	0,636	|	1,097	|	39,980	|	42,496	|	1,254
+20	|	2	|	0,461	|	0,793	|	38,924	|	41,077	|	0,986
+21	|	2,1	|	0,332	|	0,572	|	37,903	|	39,717	|	0,842
+22	|	2,2	|	0,24	|	0,414	|	36,972	|	38,476	|	0,706
+23	|	2,3	|	0,174	|	0,299	|	36,043	|	37,386	|	0,584
+24	|	2,4	|	0,125	|	0,217	|	35,020	|	36,342	|	0,477
+25	|	2,5	|	0,092	|	0,159	|	33,937	|	35,237	|	0,448
+26	|	2,6	|	0,067	|	0,115	|	32,817	|	34,095	|	0,443
+27	|	2,7	|	0,048	|	0,08	|	31,677	|	32,931	|	0,438
+28	|	2,8	|	0,032	|	0,052	|	30,529	|	31,757	|	0,432
+29	|	2,9	|	0,02	|	0,032	|	29,376	|	30,581	|	0,427
+30	|	3	|	0,012	|	0,018	|	28,230	|	29,408	|	0,421
+31	|	3,1	|	0,006	|	0,009	|	27,096	|	28,248	|	0,415
+32	|	3,2	|	0,003	|	0,004	|	25,979	|	27,106	|	0,409
+33	|	3,3	|	0,001	|	0,001	|	24,883	|	25,984	|	0,404
+34	|	3,4	|	0		|	0		|	23,812	|	24,885	|	0,398
+35	|	3,5	|	0		|	0		|	22,766	|	23,813	|	0,392
+
+
 
 *Tabela 3: Tabela de Propagação.* 
 
-A figura [4](#Hidrograma-amortecido) é utilizada pra analisar a diferença do pico da vazão, observe que a vazão efluente máxima ocorre no ponto onde o hidrograma de saída cruza o hidrograma de entrada. Essa é uma característica das propagações de reservatório. No hidrograma de saída o aumento da vazão aconteceu devido a utilização do vertedouro no instante de tempo aproximado de 30 minutos.
+A figura [4](#Hidrograma-amortecido) é utilizada pra analisar a diferença do pico da vazão, observe que a vazão efluente máxima ocorre no ponto onde o hidrograma de saída cruza o hidrograma de entrada. Essa é uma característica das propagações de reservatório. No hidrograma de saída o aumento da vazão aconteceu devido a utilização do vertedouro no instante de tempo aproximado de 1,10 horas.
 <a name="Hidrograma-amortecido"></a>
 
 ![cotaxvolumeArtigo]({{site.baseurl}}/assets/img/hidrogramaAmortecido.JPG) 
@@ -172,7 +174,7 @@ A figura [4](#Hidrograma-amortecido) é utilizada pra analisar a diferença do p
 
 Note também que a vazão efluente máxima de 4,708$$m^3$$/s corresponde a uma elevação máxima de reservatório de aproximadamente 2,1 metros, que pode ser determinado interpolando a taxa de descarga em relação a cota. Essa elevação se tornaria então o nível de água de projeto na bacia de detenção, apesar de passar 60cm cm da cota da soleira, o reservatório está bem dimensionado e não ocorrerá transbordamento.
 
-Finalmente, observe que a propagação resultou em uma redução da vazão efluente máxima de 4,708$$m^3$$/s (entrada) para 2,643$$m^3$$/s (saída). Isso é uma atenuação de 43,86%, obtida pela equação \ref{eq:eqcContinuidade4}. O retardo no tempo é de aproximadamente 18 minutos.
+Finalmente, observe que a propagação resultou em uma redução da vazão efluente máxima de 4,708$$m^3$$/s (entrada) para 2,643$$m^3$$/s (saída). Isso é uma atenuação de 43,86%, obtida pela equação \ref{eq:eqcContinuidade4}. O retardo no tempo é de aproximadamente 24 minutos.
 
 \begin{equation}
 \label{eq:eqcContinuidade4}\tag{4}
