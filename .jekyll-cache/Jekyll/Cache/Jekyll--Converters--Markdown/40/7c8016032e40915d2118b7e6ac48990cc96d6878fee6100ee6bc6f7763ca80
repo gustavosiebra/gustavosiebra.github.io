@@ -1,0 +1,83 @@
+I"/<ol>
+  <li>
+    <p><strong>INTRODUÇÃO</strong></p>
+
+    <p>A partir de 1750, começa a era da produção industrial, das máquinas e da energia a vapor, tudo isso se faz representar também na arquitetura. As construções definitivamente passam a ser voltadas à praticidade, rapidez, economia de tempo e dinheiro. Após a Revolução Industrial, as pontes passaram a ganhar o destaque que até então cabia às catedrais na arquitetura. Construir pontes para transpor vales e rios era essencial para fazer a economia acelerar. Modelos construídos em arco, utilizando o ferro, tornaram-se a ordem do dia a partir de 1779, quando foi construída a Ironbridge (ponte de ferro), em Coalbrookdale, Inglaterra, eliminando a necessidade de utilizar balsas para cruzar o Rio Severn, o que custava muito tempo às indústrias da região.</p>
+  </li>
+  <li>
+    <p><strong>OBJETIVO</strong></p>
+
+    <p>2.1	<strong>OBJETIVO GERAL</strong></p>
+
+    <p>Propor aos alunos de graduação em Engenharia Civil um desafio extraclasse, sem nenhuma exigência de conhecimento específico, mais com a devida importância às exigências de construção da ponte.</p>
+
+    <p>2.2	<strong>OBJETIVO ESPECÍFICO</strong></p>
+
+    <p>Este trabalho trata-se do projeto da construção e ensaio destrutivo de uma ponte de macarrão treliçada, utilizando papel, cola e outros materiais conforme o <a href="https://www.dropbox.com/s/dcvti40xhxcciqx/EDITAL-PONTE-DE-PAPEL.pdf?dl=0">regulamento do edital</a>. A ponte foi dimensionada de modo que atinja o melhor resultado (quociente entre a máxima massa suportada pela ponte antes da ruptura e a massa da ponte).</p>
+
+    <p>O projeto segue as seguintes especificações:</p>
+
+    <ul>
+      <li>Vencer um vão livre de 1 metro;</li>
+      <li>Ter no máximo 20 cm d e largura e 50 cm de altura;</li>
+      <li>Pesar no máximo 800g;</li>
+      <li>A ponte deverá estar apoiada em cima de dois canos de PVC com a largura da ponte;</li>
+      <li>Ter no centro da ponte uma barra d e ferro com a largura da ponte, onde irão ser aplicados os pesos na ponte.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>MATERIAL UTILIZADO</strong></p>
+
+    <ul>
+      <li>Papel A4;</li>
+      <li>Tesoura;</li>
+      <li>Estilete,</li>
+      <li>Escalímetro;</li>
+      <li>Palito de Churrasco;</li>
+      <li>Cola branca;</li>
+      <li>Cola quente;</li>
+      <li>Pistola de cola quente;</li>
+      <li>Barra de construção 8mm de diâmetro;</li>
+      <li>Cano PVC.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>CONSTRUÇÃO DA PONTE</strong></p>
+
+    <p>As pontes são feitas de peças chamadas treliças, que são estruturas construídas com a sustentação baseada em triângulos consecutivos. Esse formato permite que existam somente dois tipos de forças internas nos membros da estrutura: as forças de compressão e de tração. Compressão é toda força que age como se estivesse “esmagando” o objeto. Tração, por sua vez, é a capacidade que um objeto tem se estender ou resistir a alongamentos quando submetido a forças “extensivas”.</p>
+  </li>
+  <li>
+    <p><strong>CÁLCULOS</strong></p>
+
+    <p>Para os cálculos de compressão e tração foi utilizado o software FTOOL (figura <a href="#FTOOL">1, 2 e 3</a>).
+<a name="FTOOL"></a></p>
+
+    <p><img src="/assets/img/post7-img1.png" alt="post7-img1" />
+<em>Figura 1: Esforços no Nós.</em></p>
+
+    <p><img src="/assets/img/post7-img2.png" alt="post7-img2" />
+<em>Figura 2: Esforços de Tração e Compressão em cada treliçada</em></p>
+
+    <p><img src="/assets/img/post7-img3.png" alt="post7-img3" />
+<em>Figura 3: Deformação da Ponte</em></p>
+  </li>
+  <li>
+    <p><strong>MONTAGEM DA PONTE</strong></p>
+
+    <p><img src="/assets/img/post7-img4.png" alt="post7-img4" /></p>
+
+    <p><img src="/assets/img/post7-img6.png" alt="post7-img5" /></p>
+
+    <p><img src="/assets/img/post7-img7.png" alt="post7-img6" /></p>
+
+    <p><img src="/assets/img/post7-img8.png" alt="post7-img7" /></p>
+
+    <p><em>Figura 4: Montagem da Ponte</em></p>
+  </li>
+  <li>
+    <p><strong>CONCLUSÃO</strong></p>
+
+    <p>Esse trabalho tem como finalidade relacionar a ciência e a tecnologia com o cotidiano dos alunos permitindo que os professores possam desenvolver uma atividade prática e lúdica, na qual pode despertar um maior interesse dos alunos pelas disciplinas e ajudar na fixação do conhecimento.</p>
+  </li>
+</ol>
+:ET
