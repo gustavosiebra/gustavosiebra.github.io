@@ -36,7 +36,7 @@ Para resolver a equação \ref{eq:eqcContinuidade1}, primeiro reescreva para uma
 \frac{I_{1}+I_{2}}{2}+\frac{O_{1}+O_{2}}{2}=\frac{S_{2}+S_{1}}{\Delta t} 
 \end{equation}
 
-Os subscritos 1 e 2 denotam o início e o fim, respectivamente, do período $\Delta$t escolhido. Os termos na equação \ref{eq:eqcContinuidade2} podem agora ser reorganizados como:
+Os subscritos 1 e 2 denotam o início e o fim, respectivamente, do período $$\Delta$$t escolhido. Os termos na equação \ref{eq:eqcContinuidade2} podem agora ser reorganizados como:
 
 \begin{equation}
 \label{eq:eqcContinuidade3}\tag{3}
