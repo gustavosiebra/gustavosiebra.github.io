@@ -121,7 +121,7 @@ O (m³/s)	|	(2S/Δt)+O (m³/s)	|	(2S/Δt)-O (m³/s)
 
 *Tabela 2: Parâmetros para o cálculo da propagação.* 
 
-Com a informação do [hidrograma de projeto](http://gustavosiebra.github.io/metodo-scs/) é possível fazer a tabela [3](#Propagação), para encontrar o valor de (2S/Δt)+O é feito a soma da linha anterior das colunas 4 e 5, já os valores (2S/Δt)-O e O deve ser feito interpolação com o auxílio da tabela [2](#Parâmetros1) e do parametro (2S/Δt)+O, dessa forma achamos a vazão amortecida pelo uso do reservatório. 
+Com a informação do [hidrograma de projeto](http://gustavosiebra.github.io/metodo-scs/) é possível fazer a tabela [3](#Propagação), para encontrar o valor de (2S/Δt)+O é feito a soma da linha anterior das colunas 4 e 5 (equação \ref{eq:eqcContinuidade3}), já os valores (2S/Δt)-O e O deve ser feito interpolação com o auxílio da tabela [2](#Parâmetros1) e do parametro (2S/Δt)+O, dessa forma achamos a vazão amortecida pelo uso do reservatório. 
 <a name="Propagação"></a>
 
 índice|	tempo (h)	|	i (m³/s)	|	$$i_{1}$$+$$i_{2}$$ (m³/s)	|	(2S/Δt)-O (m³/s)	|	(2S/Δt)+O (m³/s)	|	O (m³/s)
