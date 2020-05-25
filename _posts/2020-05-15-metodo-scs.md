@@ -147,7 +147,7 @@ Para obter o hidrograma de projeto deve-se associar a parcela de cada bloco que 
 ![HidrogramadeProjetoArtigo]({{site.baseurl}}/assets/img/HidrogramadeProjetoArtigo.jpg)
 *Figura 4: Hidrograma de projeto*
 
-Está disponível no [`Google Sheet`](https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing) a planilha e o vídeo (figura abaixo) que explica o passo a passo do método.
+Está disponível no [`Google Sheet`](https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing) e no [`Dropbox`](https://www.dropbox.com/s/1nywllr0yamo4cy/Hidrograma%20de%20Projeto%20-%20SCS.xlsx?dl=0g) a planilha e o vídeo (figura abaixo) que explica o passo a passo do método.
 
 [![](http://img.youtube.com/vi/8KKiEd-caF0/0.jpg)](http://www.youtube.com/watch?v=8KKiEd-caF0 "Método SCS")
 

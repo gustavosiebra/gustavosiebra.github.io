@@ -1,4 +1,4 @@
-I"�7<h2 id="1-separação-do-escoamento-">1. Separação do escoamento <a name="Separação do escoamento"></a></h2>
+I"<8<h2 id="1-separação-do-escoamento-">1. Separação do escoamento <a name="Separação do escoamento"></a></h2>
 
 <p>A separação do escoamento é a etapa do método SCS que consiste na determinação volume de água que entra na bacia através da precipitação que será escoado superficialmente, através de um balanço hídrico. A precipitação que cai sobre uma bacia hidrográfica pode seguir quatro caminhos potenciais: parte da precipitação é interceptada pela vegetação e evaporada para a atmosfera; parte cairá sobre o solo e irá evaporar; parte irá infiltrar no solo; e o restante irá escoar superficialmente na bacia. A quantidade de precipitação e o parâmetro <em>Curve Number</em> (CN), irão determinar a quantidade de água que irá escoar na bacia e encontrar os cursos d’água superficiais.</p>
 
@@ -242,7 +242,7 @@ P: Precipitação (mm).</p>
 <p><img src="/assets/img/HidrogramadeProjetoArtigo.jpg" alt="HidrogramadeProjetoArtigo" />
 <em>Figura 4: Hidrograma de projeto</em></p>
 
-<p>Está disponível no <a href="https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing"><code class="highlighter-rouge">Google Sheet</code></a> a planilha e o vídeo (figura abaixo) que explica o passo a passo do método.</p>
+<p>Está disponível no <a href="https://docs.google.com/spreadsheets/d/1oIE482NU7pCUVe7MAD6o-r3gSkHfAEvS73x0jB9B5_s/edit?usp=sharing"><code class="highlighter-rouge">Google Sheet</code></a> e no <a href="https://www.dropbox.com/s/1nywllr0yamo4cy/Hidrograma%20de%20Projeto%20-%20SCS.xlsx?dl=0g"><code class="highlighter-rouge">Dropbox</code></a> a planilha e o vídeo (figura abaixo) que explica o passo a passo do método.</p>
 
 <p><a href="http://www.youtube.com/watch?v=8KKiEd-caF0" title="Método SCS"><img src="http://img.youtube.com/vi/8KKiEd-caF0/0.jpg" alt="" /></a></p>
 
