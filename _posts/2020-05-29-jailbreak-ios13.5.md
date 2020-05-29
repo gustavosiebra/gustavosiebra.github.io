@@ -2,7 +2,7 @@
 layout: post
 title:  "Jailbreak iOS 13.5 - Unc0ver"
 date:   2020-05-29 00:00:00
-description: Neste post, responderei as principais dúvidas sobre o Jailbreak, apontando seus prós e contras, e falaremos um pouco sobre sua história.
+description: Neste post, responderei as principais dúvidas sobre o Jailbreak, apontando seus benefícios, riscos e como realizar o desbloqueio.
 img: post8-img1.png # Add image post (optional)
 mathjax: true
 ---
