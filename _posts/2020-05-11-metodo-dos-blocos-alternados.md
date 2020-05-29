@@ -71,5 +71,5 @@ Fiz um vídeo (figura abaixo) explicando detalhadamente o código em python que 
 
 SILVA, F. O. E. da; JÚNIOR, F. F. R. P.; CAMPOS, J. N. B. **Equação de chuvas para Fortaleza-CE com dados do pluviógrafo da UFC**. [S.l.]: Revista DAE. N 192, 2013.
 
-TOMAZ,   P. **Curso   de   Manejo   de   águas   pluviais**.   2010.   Acessadoem 19-Novembro-2019. Disponível em:  <https://www.passeidireto.com/arquivo/66227801/apostila-prof-plinio-metodo-dos-blocos-alternados>.
+TOMAZ, P. **Curso de Manejo de águas pluviais**. 2010. Acessado em 19-Novembro-2019. Disponível em: <https://www.passeidireto.com/arquivo/66227801/apostila-prof-plinio-metodo-dos-blocos-alternados>.
 

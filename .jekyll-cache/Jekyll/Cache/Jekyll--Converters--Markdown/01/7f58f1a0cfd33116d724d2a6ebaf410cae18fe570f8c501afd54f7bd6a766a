@@ -1,0 +1,86 @@
+I"9<ol>
+  <li>
+    <p><strong>O que é jailbreak?</strong></p>
+
+    <p>A tradução livre do termo <em>jailbreak</em> para o português seria “fuga da prisão”, consiste na técnica aplicada no iPhone/iPad/iPod para desbloquear o sistema operacional iOS.	O jailbreak permite a instalação de softwares não autorizados pela <em>Apple</em> através do <em>Cydia</em>, <em>Sileo</em> ou <em>Zebra</em>, a loja virtual que hospeda os <em>tweaks</em>. O jailbreak é sinônimo de liberdade de uso, algo que todo usuário de tecnologia tem direito, e que todo proprietário de dispositivos com iOS merece.</p>
+  </li>
+  <li>
+    <p><strong>É seguro?</strong></p>
+
+    <p>O problema é alto para aqueles que não possuem habilidades suficientes para efetuar a operação. Não sabe fazer, não faça! Segurança é sempre relativa ao bom uso e ao razoável conhecimento sobre como evitar vacilos e neutralizar vulnerabilidades inerentes ao processo. Uma boa fonte de pesquisa é o sub <a href="https://www.reddit.com/r/jailbreak/">/r/jailbreak</a> no Reddit, melhor fonte de informação.</p>
+
+    <p><strong>Dica</strong>: nunca instalar deb’s de fontes duvidosas, isso inclui tweaks pirateados, que devem ser evitados ao máximo.</p>
+  </li>
+  <li>
+    <p><strong>Devo fazer?</strong></p>
+
+    <p>Segue uma lista bem resumida de razões que podem levar a você sair da prisão:</p>
+
+    <ul>
+      <li>Total controle do sistema de arquivos;</li>
+      <li>Capacidade de downgrade de aplicativos;</li>
+      <li>Customização do tema: mudança nos ícones, fonte, animações, labels, badges, cores, etc;</li>
+      <li>Instalar qualquer ipa, quebrando com o monopólio sobre o que você pode instalar no seu aparelho.</li>
+      <li>Melhor bloqueio de ads e publicidade diretamente no nível de rede, sem necessidade de profiles e c
+onexões VPN;</li>
+      <li>Poder personalizar o iOS com literalmente milhares de tweaks que antecipam e inspiram o que a Apple vai implementar em iOS futuros;</li>
+    </ul>
+  </li>
+  <li><strong>Como fazer?</strong>
+    <h3 id="instalando-altstore">Instalando Altstore</h3>
+    <ol>
+      <li>Antes de instalar:
+        <ul>
+          <li>Baixe a versão mais recente do <strong>iTunes</strong> <a href="https://www.apple.com/itunes/">diretamente da Apple</a> (não da Microsoft Store).</li>
+          <li>Baixe a versão mais recente do <strong>iCloud</strong> <a href="https://support.apple.com/en-us/HT204283">diretamente da Apple</a> (não da Microsoft Store).</li>
+        </ul>
+      </li>
+      <li>Instalando:
+        <ul>
+          <li>No Windows, fazer download do <a href="https://altstore.io/altserver/beta/">Altstore Version 1.3 beta 3</a> (foi a versão que consegui instalar usando Windows 7).</li>
+          <li>Extraia o arquivo “AltInstaller.zip” baixado.</li>
+          <li>Clique duas vezes em “setup.exe” e siga as instruções de instalação.</li>
+          <li>Inicie o AltServer (ele aparecerá como um ícone na área de notificação).</li>
+          <li>Confie no seu iPhone com o seu computador (se necessário).</li>
+          <li>Abra o iTunes e ative a sincronização Wi-Fi do iTunes para o seu telefone.</li>
+          <li>
+            <p>Clique no ícone AltServer na área de notificação, depois “Instalar AltStore” e escolha o seu dispositivo.
+ <img src="/assets/img/post8-img4.png" alt="img4" />
+ <img src="/assets/img/post8-img5.png" alt="img5" /></p>
+          </li>
+          <li>
+            <p>Digite seu e-mail e senha do ID Apple.
+ <img src="/assets/img/post8-img6.png" alt="img6" /></p>
+          </li>
+          <li>Aguarde alguns segundos e o AltStore será instalado no seu telefone.</li>
+          <li>Antes de abrir o aplicativo, va em Ajustes&gt; Geral &gt; Gerenciamento de Dispositivos &gt; ID Apple.</li>
+        </ul>
+
+        <p><img src="/assets/img/post8-img2.png" alt="img2" /></p>
+
+        <ul>
+          <li>Clique no botão vermelho Autorizar, em seguida, pode abrir o aplicativo.</li>
+        </ul>
+
+        <p><img src="/assets/img/post8-img3.png" alt="img3" /></p>
+      </li>
+    </ol>
+
+    <h3 id="instalando-unc0ver">Instalando Unc0ver</h3>
+    <ol>
+      <li></li>
+    </ol>
+  </li>
+  <li>
+    <p><strong>Conclusão</strong></p>
+
+    <p>Sim, jailbreak em 2019 vale muitíssimo a pena. E sim, é seguro nas mãos de quem preza por segurança e se dedica a entender quais são os riscos e boas práticas capazes de minimizá-los. Com as simples dicas acima, 90% dos problemas são evitados.</p>
+
+    <p>E o melhor: jailbreak é uma aventura infinitamente divertida na mão de quem valoriza a liberdade de uso sobre seus próprios aparelhos. Um caminho capaz de levar a experiência no iOS pra um outro patamar</p>
+  </li>
+</ol>
+
+<h3 id="fonte"><strong>Fonte</strong></h3>
+
+<p>Altstore FAQ. Acessado em 29-Maio-2020. Disponível em: <a href="https://altstore.io/faq/">https://altstore.io/faq/</a>.</p>
+:ET
