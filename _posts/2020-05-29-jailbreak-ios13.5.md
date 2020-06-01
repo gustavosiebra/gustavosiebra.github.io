@@ -31,6 +31,7 @@ mathjax: true
 	* Poder personalizar o iOS com literalmente milhares de tweaks que antecipam e inspiram o que a Apple vai implementar em iOS futuros;
 
 4.	**Como fazer?**
+
 	### Instalando Altstore
 	1. **Antes de instalar**:
 		* Baixe a versão mais recente do **iTunes** [diretamente da Apple](https://www.apple.com/itunes/) (não da Microsoft Store).
