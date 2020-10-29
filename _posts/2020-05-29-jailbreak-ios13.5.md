@@ -37,9 +37,10 @@ mathjax: true
 		* Baixe a versão mais recente do **iTunes** [diretamente da Apple](https://www.apple.com/itunes/) (não da Microsoft Store).
 		* Baixe a versão mais recente do **iCloud** [diretamente da Apple](https://support.apple.com/en-us/HT204283) (não da Microsoft Store).
 	2. **Instalando**:
-		* No Windows, fazer download do [Altstore Version 1.3 beta 3](https://altstore.io/altserver/beta/) (foi a versão que consegui instalar usando Windows 7).
+		* No Windows, fazer download da última versão do [Altstore](https://altstore.io/). Para  [versões anteriores do Altstore](https://altstore.io/altserver/beta/)
 		* Extraia o arquivo "AltInstaller.zip" baixado.
 		* Clique duas vezes em “setup.exe” e siga as instruções de instalação.
+		* Em caso de erro para o Windows 7 que não tem suporte seguir o vídeo do [Youtube do canal zehaxed](https://www.youtube.com/watch?v=_JTp0yPliJw)
 		* Inicie o AltServer (ele aparecerá como um ícone na área de notificação).
 		* Confie no seu iPhone com o seu computador (se necessário).
 		* Abra o iTunes e ative a sincronização Wi-Fi do iTunes para o seu telefone.
