@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Método dos Blocos Alternados usando Python"
-date:   2020-05-11 00:00:00
+date:   2026-05-11 00:00:00
 description: Pensando na automatização do processo, usei programação para facilitar a geração de gráficos e tabelas do método.
 img: blocosAlternados.JPG # Add image post (optional)
 mathjax: true

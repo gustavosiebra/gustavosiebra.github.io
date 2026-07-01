@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ponte de Papel"
-date:   2020-05-20 00:00:00
+date:   2026-03-20 00:00:00
 description: No primeiro semestre do curso de Engenharia civil participei do desafio de fazer uma ponte só com papel e cola, ganharia a ponte que pesasse menos e aguentasse mais peso.
 img: post7-img8.png # Add image post (optional)
 mathjax: true

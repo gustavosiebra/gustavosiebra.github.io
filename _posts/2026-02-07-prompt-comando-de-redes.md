@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Prompt: Comandos de Rede"
-date:   2020-02-07 00:00:00
+date:   2026-02-07 00:00:00
 description: Aprenda como reiniciar as configurações de rede usando comandos avançados do prompt. # Primeiro post
 img: semconexao.jpg # Add image post (optional)
 ---
